@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老云宇宙 // 程云杰的数字潮玩基地</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        :root {
+            --bg-main: #F0FDF4; 
+            --bg-card: #FFFFFF; 
+            --bg-section-alt: #F8FAFC; 
+            --bg-capability-card-hover: #f7fbfd; 
+            
+            --text-primary: #1A202C; 
+            --text-secondary: #4A5568; 
+            --text-muted: #718096; 
+            
+            --accent-color: #38A169; 
+            --accent-color-rgb: 56, 161, 105; 
+            --accent-color-darker: #2F855A;
+            --accent-color-lighter: #54d194; 
+            --border-color: #E2E8F0; 
+            --border-color-stronger: #CBD5E0; 
+            
+            --shadow-light: rgba(0, 0, 0, 0.04); 
+            --shadow-medium: rgba(0, 0, 0, 0.08);
+            --shadow-strong: rgba(0, 0, 0, 0.12);
+            --shadow-accent: rgba(var(--accent-color-rgb), 0.2); 
+
+            --hero-bg-image: url('https://shuzijungts.obs.ap-southeast-3.myhuaweicloud.com/%E7%85%A7%E7%89%87/%E5%BE%AE%E4%BF%A1/jimeng-2025-05-22-259-%E4%B8%80%E4%BD%8D%E8%BA%AB%E7%9D%80%E9%BB%91T%E6%81%A4%E5%92%8C%E6%B5%81%E8%89%B2%E6%8B%BC%E8%89%B2%E8%A3%A4%E3%80%81%E8%84%9A%E7%A9%BF%E7%99%BD%E9%9E%8B%E3%80%81%E6%88%B4%E9%A1%B9%E9%93%BE%E5%92%8C%E6%89%8B%E8%A1%A8%E7%9A%84%E6%97%B6%E5%B0%9A%E4%BC%91%E9%97%B2%E7%94%B7%E5%AD%90%E6%89%8B%E6%8C%81%E6%89%8B%E6%9C%BA%EF%BC%8C%E4%B8%8E%E4%B8%80%E5%8F%AA%E8%80%B3%E6%9C%B5%E7%AB%8B%E8%B5%B7%E6%9D%A5%E7%9A%84%E7%81%B0%E7%99%BD%E7%9B%B8%E9%97%B4%E9%9B%AA%E7%BA%B3%E7%91%9E%E4%B8%80%E8%B5%B7%E7%9C%8B%E7%9D%80%E9%95%9C%E5%A4%B4%E5%9C%A8%E5%AE%A4%E5%A4%96%E8%8D%89%E5%9C%B0%E4%B8%8A%E8%87%AA%E6%8B%8D%EF%BC%8C%E5%83%8F%E7%B4%A0%E6%8F%92%E7%94%BB%E9%A3%8E%E6%A0%BC%EF%BC%8C%E5%8D%8A%E8%BA%AB%E7%89%B9...%281%29.png'); 
+        }
+
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Lato', 'Noto Sans SC', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-secondary);
+            line-height: 1.75; 
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden; 
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', 'Noto Sans SC', sans-serif;
+            color: var(--text-primary);
+            font-weight: 700; 
+        }
+        .font-lato { font-family: 'Lato', 'Noto Sans SC', sans-serif; }
+        .font-montserrat { font-family: 'Montserrat', 'Noto Sans SC', sans-serif; }
+        .font-noto-sans-sc { font-family: 'Noto Sans SC', sans-serif; }
+
+        .navbar-sticky {
+            background-color: rgba(240, 253, 244, 0.85); 
+            backdrop-filter: blur(12px); 
+            box-shadow: 0 2px 8px var(--shadow-light); 
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease-out; 
+        }
+        body.scrolled .navbar-sticky { 
+            background-color: rgba(255, 255, 255, 0.95); 
+            box-shadow: 0 6px 16px rgba(0,0,0,0.07); 
+        }
+        .nav-logo-text { 
+            transition: color 0.3s ease, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); 
+        }
+        .nav-logo-text:hover { 
+            transform: scale(1.08); 
+            text-shadow: 0 0 10px rgba(var(--accent-color-rgb),0.5); 
+        }
+
+        .nav-link-simple {
+            padding: 0.75rem 1rem; margin: 0 0.25rem; border-radius: 0.375rem;
+            color: var(--text-secondary); font-weight: 500;
+            transition: color 0.3s ease, background-color 0.3s ease, transform 0.25s cubic-bezier(0.25, 0.1, 0.25, 1); 
+            position: relative;
+        }
+        .nav-link-simple::after {
+            content: ''; position: absolute; bottom: 4px; left: 50%; 
+            transform: translateX(-50%) scaleX(0); 
+            width: 30px; height: 2.5px; 
+            background-color: var(--accent-color); 
+            transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease; 
+            opacity: 0;
+            border-radius: 1px;
+        }
+        .nav-link-simple:hover { color: var(--accent-color); transform: translateY(-3px); } 
+        .nav-link-simple:hover::after, .nav-link-simple.active::after { transform: translateX(-50%) scaleX(1); opacity: 1; }
+        .nav-link-simple.active { color: var(--accent-color); font-weight: 600; }
+
+
+        .mobile-menu-button { color: var(--text-primary); transition: color 0.3s ease, transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55); } 
+        .mobile-menu-button:hover { color: var(--accent-color); transform: rotate(180deg); }
+        #mobile-menu-simple { 
+            background-color: var(--bg-card); 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12); 
+            border-top: 1px solid var(--border-color);
+        }
+
+        #hero {
+            min-height: 95vh; display: flex; align-items: center; justify-content: center;
+            text-align: center; padding: 3rem 1rem; position: relative;
+            background-image: var(--hero-bg-image); background-size: cover; 
+            background-position: center center; background-repeat: no-repeat; 
+        }
+        #hero::before { 
+            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(240, 253, 244, 0.8)); 
+            z-index: 1;
+        }
+        #hero > .container { position: relative; z-index: 2; }
+        .hero-title {
+            font-size: 3.25rem; font-weight: 800; margin-bottom: 1.25rem; line-height: 1.15;
+            color: var(--text-primary); text-shadow: 1px 1px 4px rgba(0,0,0,0.15); 
+        }
+        @media (min-width: 768px) { .hero-title { font-size: 5.5rem; } } 
+        .hero-subtitle {
+            font-size: 1.375rem; color: var(--text-secondary); font-weight: 400;
+            margin-bottom: 1.75rem; max-width: 650px; margin-left: auto; margin-right: auto;
+        }
+        .hero-description {
+            font-size: 1.125rem; max-width: 700px; margin-left: auto; margin-right: auto;
+            margin-bottom: 2.5rem; font-weight: 300; color: var(--text-secondary); 
+        }
+        .btn-primary {
+            background-color: var(--accent-color); color: white; padding: 1rem 2.5rem; 
+            border-radius: 0.5rem; font-weight: 600; letter-spacing: 0.025em; 
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
+            box-shadow: 0 4px 15px var(--shadow-accent); 
+            display: inline-flex; align-items: center;
+        }
+        .btn-primary:hover {
+            background-color: var(--accent-color-darker); 
+            transform: translateY(-5px) scale(1.05); 
+            box-shadow: 0 10px 25px var(--shadow-accent); 
+        }
+        .btn-primary svg { margin-right: 0.75rem; transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); } 
+        .btn-primary:hover svg { transform: translateX(5px) rotate(10deg); }
+
+
+        section { padding: 5rem 1rem; }
+        @media (min-width: 768px) { section { padding: 7rem 1rem; } } 
+        
+        #about-me, #laoyun-resume, #laoyun-life-journey, #laoyun-talk, #capability-overview { background-color: var(--bg-section-alt); } 
+        #forge, #laoyun-life { background-color: var(--bg-main); }
+
+
+        .section-title {
+            font-size: 2.5rem; font-weight: 800; margin-bottom: 1.25rem; text-align: center;
+        }
+        @media (min-width: 768px) { .section-title { font-size: 3.5rem; } } 
+        .section-subtitle {
+            font-size: 1.125rem; color: var(--text-muted); text-align: center;
+            margin-bottom: 4.5rem; max-width: 650px; margin-left: auto; margin-right: auto;
+        }
+
+        .content-card {
+            background-color: var(--bg-card); border-radius: 0.75rem; padding: 2.25rem; 
+            border: 1px solid var(--border-color); box-shadow: 0 6px 20px var(--shadow-light); 
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease;
+        }
+        .content-card:hover {
+            transform: translateY(-10px) scale(1.02); 
+            box-shadow: 0 15px 35px var(--shadow-medium), 0 0 0 3px var(--accent-color-lighter); 
+            border-color: var(--accent-color-lighter);
+        }
+        .card-title { font-size: 1.625rem; font-weight: 700; margin-bottom: 0.75rem; }
+        .card-meta { font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1rem; }
+        .card-description { font-size: 1rem; line-height: 1.75; color: var(--text-secondary); }
+        .card-icon-area { /* For Laoyun TALK cards */
+            height: 8rem; background-color: #EBF8F1; border-radius: 0.5rem;
+            margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center;
+            transition: background-color 0.3s ease, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); 
+        }
+        .content-card:hover .card-icon-area { background-color: #C6F6D5; transform: scale(1.08) rotate(-3deg); } 
+        .card-icon-area svg {
+            width: 3.5rem; height: 3.5rem; color: var(--accent-color);
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .content-card:hover .card-icon-area svg { transform: rotate(15deg) scale(1.15); } 
+
+        /* --- Timeline Section (Laoyun Resume - formerly Shengya) --- */
+        .timeline-simple { position: relative; max-width: 900px; margin: 0 auto; }
+        .timeline-simple::before {
+            content: ''; position: absolute; left: 14px; top: 0; bottom: 0;
+            width: 4px; 
+            background: linear-gradient(to bottom, transparent, var(--accent-color) 30%, var(--accent-color) 70%, transparent); 
+            border-radius: 2px;
+            height: 100%; 
+            transform: scaleY(0);
+            transform-origin: top;
+            animation: draw-timeline-line-fancy 2s cubic-bezier(0.77, 0, 0.175, 1) forwards; 
+            animation-delay: 0.2s; 
+        }
+        @keyframes draw-timeline-line-fancy { 
+            to { transform: scaleY(1); } 
+        }
+
+        @media (min-width: 768px) {
+            .timeline-simple::before { left: 50%; transform: translateX(-50%) scaleY(0); }
+        }
+        .timeline-simple-item { 
+            position: relative; 
+            margin-bottom: 3rem; 
+            padding-left: 45px; 
+        }
+        .timeline-simple-item:last-child { margin-bottom: 0; }
+        
+        .timeline-simple-dot {
+            position: absolute; left: 0; top: 5px; width: 22px; height: 22px; 
+            border-radius: 50%; background-color: var(--accent-color);
+            border: 5px solid var(--bg-section-alt); z-index: 1;
+            box-shadow: 0 0 0 0 rgba(var(--accent-color-rgb), 0.7); 
+            transform: scale(0); 
+            animation: pop-dot-fancy 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6) forwards, 
+                       pulse-dot 2s infinite; 
+        }
+      
+        @keyframes pop-dot-fancy { 
+            0% { transform: scale(0); box-shadow: 0 0 0 10px rgba(var(--accent-color-rgb), 0.3); }
+            70% { transform: scale(1.2); box-shadow: 0 0 0 0 rgba(var(--accent-color-rgb), 0.7); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(var(--accent-color-rgb), 0); }
+        }
+        @keyframes pulse-dot { 
+            0% { box-shadow: 0 0 0 0 rgba(var(--accent-color-rgb), 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(var(--accent-color-rgb), 0); }
+            100% { box-shadow: 0 0 0 0 rgba(var(--accent-color-rgb), 0); }
+        }
+
+        .timeline-simple-content {
+            position: relative; background-color: var(--bg-card); padding: 1.75rem; 
+            border-radius: 0.6rem; 
+            border: 1px solid var(--border-color);
+            box-shadow: 0 5px 15px var(--shadow-light);
+            transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.4s cubic-bezier(0.23, 1, 0.32, 1), border-color 0.3s ease;
+            overflow: hidden; 
+        }
+        .timeline-simple-content::after { 
+            content: '';
+            position: absolute;
+            top: 0; left: -150%;
+            width: 100%; height: 100%;
+            background: linear-gradient(to right, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%);
+            transition: left 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+            z-index: 0;
+            opacity: 0;
+        }
+         .timeline-simple-item:hover .timeline-simple-content {
+            transform: translateX(10px) scale(1.03); 
+            box-shadow: 0 10px 25px var(--shadow-medium);
+            border-color: var(--accent-color);
+        }
+        .timeline-simple-item:hover .timeline-simple-content::after {
+            left: 150%;
+            opacity: 1;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-simple-item { padding-left: 0; width: 50%; margin-bottom: 4rem; }
+            .timeline-simple-item:nth-child(odd) { left: 0; padding-right: 45px; text-align: right; }
+            .timeline-simple-item:nth-child(even) { left: 50%; padding-left: 45px; }
+            .timeline-simple-item:nth-child(odd):hover .timeline-simple-content { transform: translateX(-10px) scale(1.03); }
+            .timeline-simple-item:nth-child(even):hover .timeline-simple-content { transform: translateX(10px) scale(1.03); }
+            .timeline-simple-dot { left: 50%; transform: translateX(-50%) scale(0); top: 5px; } 
+        }
+        .timeline-title { /* Used by both timelines */
+            font-size: 1.375rem; font-weight: 700; color: var(--accent-color); margin-bottom: 0.25rem; position: relative; z-index: 1;
+        }
+        .timeline-date { /* Used by both timelines */
+            font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.75rem; position: relative; z-index: 1;
+        }
+        .timeline-simple-content ul { /* Specific to Resume timeline */
+            list-style-position: outside; padding-left: 1.25rem; text-align: left; color: var(--text-secondary); position: relative; z-index: 1;
+        }
+         .timeline-simple-item:nth-child(odd) .timeline-simple-content ul { text-align: left; }
+
+        /* --- New Timeline Section (Laoyun Life Journey) --- */
+        .timeline-life-journey { position: relative; max-width: 900px; margin: 0 auto; }
+        .timeline-life-journey::before { /* Vertical line */
+            content: ''; position: absolute; left: 14px; top: 0; bottom: 0;
+            width: 4px; 
+            background: linear-gradient(to bottom, transparent, var(--accent-color-lighter) 20%, var(--accent-color) 80%, transparent); 
+            border-radius: 2px;
+            height: 100%; 
+            transform: scaleY(0);
+            transform-origin: top;
+            animation: draw-timeline-line-fancy 2s cubic-bezier(0.77, 0, 0.175, 1) forwards; 
+            animation-delay: 0.3s; /* Slightly later than resume timeline */
+        }
+        @media (min-width: 768px) {
+            .timeline-life-journey::before { left: 50%; transform: translateX(-50%) scaleY(0); }
+        }
+
+        .timeline-life-journey-item {
+            position: relative; 
+            margin-bottom: 2.5rem; 
+            padding-left: 45px;
+        }
+        .timeline-life-journey-item:last-child { margin-bottom: 0; }
+
+        .timeline-life-journey-dot {
+            position: absolute; left: 0; top: 8px; /* Adjusted top for alignment */
+            width: 20px; height: 20px; 
+            border-radius: 50%; background-color: var(--accent-color-lighter);
+            border: 4px solid var(--bg-section-alt); z-index: 1;
+            box-shadow: 0 0 0 0 rgba(var(--accent-color-rgb), 0.5); 
+            transform: scale(0); 
+            animation: pop-dot-fancy 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6) forwards, 
+                       pulse-dot 2.2s infinite 0.5s; /* Slightly different pulse */
+            animation-delay: 0.8s, 1.5s; /* Stagger animation */
+        }
+        
+        .timeline-life-journey-content-wrapper {
+            position: relative; background-color: var(--bg-card); padding: 1.5rem; 
+            border-radius: 0.6rem; 
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px var(--shadow-light);
+            transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.35s cubic-bezier(0.23, 1, 0.32, 1), border-color 0.3s ease;
+            cursor: default; /* Indicate it's interactive but not a link */
+        }
+        .timeline-life-journey-item:hover .timeline-life-journey-content-wrapper {
+            transform: translateX(8px) scale(1.02); 
+            box-shadow: 0 8px 20px var(--shadow-medium);
+            border-color: var(--accent-color-lighter);
+        }
+
+        .timeline-life-journey-summary {
+            /* Styles for initially visible title and date */
+            position: relative; z-index: 1;
+        }
+        .timeline-life-journey-details {
+            margin-top: 0.75rem;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, opacity 0.4s ease-out 0.1s, margin-top 0.5s ease-out;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.65;
+            text-align: left; /* Ensure details are left-aligned */
+            position: relative; z-index: 1;
+        }
+        .timeline-life-journey-item:hover .timeline-life-journey-details {
+            max-height: 500px; /* Adjust as needed for content length */
+            opacity: 1;
+            margin-top: 1rem;
+        }
+        .timeline-life-journey-details p { margin-bottom: 0.5rem; }
+        .timeline-life-journey-details p:last-child { margin-bottom: 0; }
+
+
+        @media (min-width: 768px) {
+            .timeline-life-journey-item { padding-left: 0; width: 50%; margin-bottom: 3.5rem; }
+            .timeline-life-journey-item:nth-child(odd) { left: 0; padding-right: 45px; }
+            .timeline-life-journey-item:nth-child(odd) .timeline-life-journey-content-wrapper { text-align: right; }
+            .timeline-life-journey-item:nth-child(odd) .timeline-life-journey-details { text-align: left; /* Keep details left aligned even on right side */ }
+
+            .timeline-life-journey-item:nth-child(even) { left: 50%; padding-left: 45px; }
+            .timeline-life-journey-item:nth-child(even) .timeline-life-journey-content-wrapper { text-align: left; }
+
+
+            .timeline-life-journey-item:nth-child(odd):hover .timeline-life-journey-content-wrapper { transform: translateX(-8px) scale(1.02); }
+            .timeline-life-journey-item:nth-child(even):hover .timeline-life-journey-content-wrapper { transform: translateX(8px) scale(1.02); }
+            .timeline-life-journey-dot { left: 50%; transform: translateX(-50%) scale(0); top: 8px; } 
+        }
+
+        /* --- Capability Overview Section --- */
+        #capability-overview .content-card { 
+            padding: 1.75rem;
+            background: var(--bg-card);
+        }
+        .capability-item {
+            display: flex;
+            flex-direction: column; 
+            align-items: stretch; 
+            margin-bottom: 1.5rem; 
+            padding: 1.25rem; 
+            border-radius: 0.75rem; 
+            background-color: var(--bg-section-alt); 
+            border: 1px solid var(--border-color);
+            box-shadow: 0 3px 8px var(--shadow-light);
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); 
+            overflow: hidden; 
+            position: relative;
+        }
+        .capability-item::before { 
+            content: ""; position: absolute;
+            top: 0; left: -100%; 
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(var(--accent-color-rgb), 0.08), transparent); 
+            transition: left 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1;
+        }
+        .capability-item:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 10px 25px var(--shadow-medium), 0 0 0 2px var(--accent-color-lighter); 
+        }
+        .capability-item:hover::before { left: 100%; }
+
+        .capability-icon-main {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .capability-icon { 
+            margin-right: 1.5rem; 
+            flex-shrink: 0; 
+            color: var(--accent-color); 
+            background-color: transparent; 
+            padding: 0; 
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2; 
+        }
+        .capability-icon svg { 
+            width: 2.75rem; 
+            height: 2.75rem; 
+            transition: transform 0.3s ease-out; 
+        }
+        
+        .capability-text { flex-grow: 1; position: relative; z-index: 2;} 
+        .capability-name {
+            font-weight: 700; 
+            color: var(--text-primary);
+            font-size: 1.375rem; 
+            margin-bottom: 0.375rem; 
+        }
+        .rating-display {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .rating-bar-bg { 
+            flex-grow: 1; 
+            height: 12px; 
+            background-color: #E9ECEF; 
+            border-radius: 6px;
+            overflow: hidden; 
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.075); 
+        }
+        .rating-bar-fill { 
+            height: 100%;
+            background: linear-gradient(to right, var(--accent-color), var(--accent-color-lighter)); 
+            border-radius: 6px;
+            width: 0%; 
+            transition: width 1.2s cubic-bezier(0.25, 1, 0.5, 1) 0.3s; 
+            position: relative;
+        }
+         .rating-bar-fill::after { 
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 30%; height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0.3), transparent);
+            opacity: 0.7;
+        }
+        .rating-value-text { 
+            font-size: 0.9rem; 
+            color: var(--text-primary); 
+            margin-left: 0.75rem; 
+            font-weight: 600;
+            flex-shrink: 0; 
+        }
+
+        .capability-description-wrapper {
+            transition: max-height 0.5s ease-out, opacity 0.4s ease-out 0.1s, margin-top 0.5s ease-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            width: 100%;
+            margin-top: 0;
+             z-index: 2; 
+             position: relative; 
+        }
+        .capability-item:hover .capability-description-wrapper {
+            max-height: 300px; 
+            opacity: 1;
+            margin-top: 1rem; 
+        }
+        .capability-description-content {
+            padding: 0.875rem 1rem; 
+            background-color: rgba(var(--accent-color-rgb), 0.03); 
+            border-radius: 0.5rem; 
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: var(--text-secondary);
+            border: 1px solid rgba(var(--accent-color-rgb), 0.1);
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.04);
+        }
+       
+        /* --- SVG Icon Animations --- */
+        @keyframes bulb-glow {
+            0%, 100% { fill: #fde047; transform: scale(1); } 
+            50% { fill: #fef08a; transform: scale(1.1); }
+        }
+        @keyframes ray-pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        .capability-item:hover .capability-icon #imagination-bulb {
+            animation: bulb-glow 1s ease-in-out infinite;
+        }
+        .capability-item:hover .capability-icon .imagination-ray {
+            animation: ray-pulse 1.5s ease-in-out infinite;
+        }
+        .capability-item:hover .capability-icon #imagination-ray-1 { animation-delay: 0s; }
+        .capability-item:hover .capability-icon #imagination-ray-2 { animation-delay: 0.2s; }
+        .capability-item:hover .capability-icon #imagination-ray-3 { animation-delay: 0.4s; }
+
+        @keyframes sawing-motion {
+            0%, 100% { transform: translateX(0) rotate(0deg); }
+            50% { transform: translateX(-3px) rotate(-2deg); }
+        }
+        @keyframes sawdust-fall {
+            0% { opacity: 1; transform: translateY(0) translateX(0); }
+            100% { opacity: 0; transform: translateY(10px) translateX(2px); }
+        }
+        .capability-item:hover .capability-icon #execution-saw-group {
+            animation: sawing-motion 0.7s ease-in-out infinite;
+        }
+        .capability-item:hover .capability-icon .execution-dust {
+            animation: sawdust-fall 0.8s linear infinite;
+        }
+        .capability-item:hover .capability-icon #execution-dust-1 { animation-delay: 0s; }
+        .capability-item:hover .capability-icon #execution-dust-2 { animation-delay: 0.2s; }
+        .capability-item:hover .capability-icon #execution-dust-3 { animation-delay: 0.4s; }
+
+        @keyframes water-drip {
+            0% { opacity: 1; transform: translateY(0); }
+            80% { opacity: 1; }
+            100% { opacity: 0; transform: translateY(15px); }
+        }
+        @keyframes plant-grow {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.05) rotate(2deg); }
+        }
+        .capability-item:hover .capability-icon .persistence-drop {
+            animation: water-drip 1.2s ease-out infinite;
+        }
+        .capability-item:hover .capability-icon #persistence-drop-1 { animation-delay: 0s; }
+        .capability-item:hover .capability-icon #persistence-drop-2 { animation-delay: 0.3s; }
+        .capability-item:hover .capability-icon #persistence-drop-3 { animation-delay: 0.6s; }
+        .capability-item:hover .capability-icon #persistence-plant-leaf-top {
+            transform-origin: bottom center;
+            animation: plant-grow 2s ease-in-out infinite;
+        }
+
+        @keyframes writing-pen {
+            0%, 100% { transform: rotate(0deg) translateX(0); }
+            25% { transform: rotate(-5deg) translateX(-1px); }
+            75% { transform: rotate(3deg) translateX(1px); }
+        }
+        @keyframes write-line {
+            from { stroke-dashoffset: 20; opacity: 0;} 
+            to { stroke-dashoffset: 0; opacity: 1;}
+        }
+        .capability-item:hover .capability-icon #learning-pen {
+            transform-origin: bottom right;
+            animation: writing-pen 0.8s ease-in-out infinite;
+        }
+        .capability-item:hover .capability-icon .learning-text-line {
+            stroke-dasharray: 20; 
+            animation: write-line 0.5s ease-out forwards; 
+        }
+      
+        @keyframes wheel-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes car-bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-2px); }
+        }
+        .capability-item:hover .capability-icon .driving-wheel {
+            transform-origin: center;
+            animation: wheel-spin 0.7s linear infinite;
+        }
+        .capability-item:hover .capability-icon #driving-car-body-main {
+            animation: car-bounce 0.5s ease-in-out infinite;
+        }
+        
+        @keyframes speed-dash {
+            to {
+                stroke-dashoffset: -20; 
+            }
+        }
+        .capability-item:hover .capability-icon .running-speed-line { 
+            stroke-dasharray: 5 5; 
+            animation: speed-dash 0.5s linear infinite;
+        }
+
+
+        @keyframes screen-blink {
+            0%, 100% { opacity: 1; } 
+            50% { opacity: 0.6; }
+        }
+        @keyframes gaming-elements-move {
+            0% {transform: translateY(0px);}
+            50% {transform: translateY(-2px);}
+            100% {transform: translateY(0px);}
+        }
+        .capability-item:hover .capability-icon #gaming-screen { 
+             animation: screen-blink 0.3s linear infinite alternate;
+        }
+        .capability-item:hover .capability-icon .gaming-screen-element { 
+            animation: gaming-elements-move 0.5s ease-in-out infinite;
+        }
+        .capability-item:hover .capability-icon #gaming-element-1 { animation-delay: 0s; }
+        .capability-item:hover .capability-icon #gaming-element-2 { animation-delay: 0.1s; }
+        .capability-item:hover .capability-icon #gaming-element-3 { animation-delay: 0.2s; }
+
+
+        @keyframes run-limb-front {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(15deg); }
+        }
+        @keyframes run-limb-back {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(-15deg); }
+        }
+        .capability-item:hover .capability-icon #running-arm-front {
+            transform-origin: top left; 
+            animation: run-limb-front 0.5s ease-in-out infinite alternate;
+        }
+        .capability-item:hover .capability-icon #running-arm-back {
+            transform-origin: top right; 
+            animation: run-limb-back 0.5s ease-in-out infinite alternate;
+        }
+        .capability-item:hover .capability-icon #running-leg-front {
+            transform-origin: top center; 
+            animation: run-limb-back 0.5s ease-in-out infinite alternate; 
+             animation-delay: 0.05s;
+        }
+        .capability-item:hover .capability-icon #running-leg-back {
+            transform-origin: top center; 
+            animation: run-limb-front 0.5s ease-in-out infinite alternate;
+            animation-delay: 0.05s;
+        }
+      
+
+        @keyframes page-peek {
+            0%, 100% { transform: skewX(0deg) translateX(0); }
+            50% { transform: skewX(-10deg) translateX(-2px); }
+        }
+        @keyframes text-lines-appear {
+            from { opacity: 0.3; }
+            to { opacity: 1; }
+        }
+        .capability-item:hover .capability-icon #reading-book-page { 
+            transform-origin: bottom left;
+            animation: page-peek 1.5s ease-in-out infinite;
+        }
+        .capability-item:hover .capability-icon .reading-text-line {
+            animation: text-lines-appear 1s ease-in-out infinite alternate;
+        }
+        .capability-item:hover .capability-icon #reading-text-line-1 { animation-delay: 0s; }
+        .capability-item:hover .capability-icon #reading-text-line-2 { animation-delay: 0.2s; }
+        .capability-item:hover .capability-icon #reading-text-line-3 { animation-delay: 0.4s; }
+
+        /* --- Laoyun Life Section --- */
+        .life-card {
+            background-color: var(--bg-card);
+            border-radius: 0.75rem; /* 12px */
+            padding: 2.5rem; /* 40px */
+            border: 1px solid var(--border-color);
+            box-shadow: 0 8px 16px var(--shadow-light); 
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            text-align: center;
+        }
+        .life-card:hover {
+            transform: translateY(-12px) scale(1.04); 
+            box-shadow: 0 20px 40px var(--shadow-medium), 0 0 0 3px rgba(var(--accent-color-rgb), 0.3); 
+            border-color: rgba(var(--accent-color-rgb), 0.5);
+        }
+        .life-card-icon-area {
+            width: 5rem; /* 80px */
+            height: 5rem; /* 80px */
+            background-color: rgba(var(--accent-color-rgb), 0.08); 
+            border-radius: 50%; 
+            margin-bottom: 1.5rem; /* 24px */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .life-card:hover .life-card-icon-area {
+            background-color: rgba(var(--accent-color-rgb), 0.15);
+            transform: scale(1.1) rotate(-5deg);
+        }
+        .life-card-icon-area svg {
+            width: 2.75rem; /* 44px */
+            height: 2.75rem; /* 44px */
+            color: var(--accent-color);
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .life-card:hover .life-card-icon-area svg {
+            transform: scale(1.15) rotate(10deg);
+        }
+        .life-card-title {
+            font-size: 1.75rem; /* 28px */
+            font-weight: 700;
+            color: var(--text-primary); 
+            margin-bottom: 0.75rem; /* 12px */
+        }
+        .life-card-description {
+            font-size: 1rem; /* 16px */
+            line-height: 1.75;
+            color: var(--text-secondary);
+            max-width: 300px; 
+        }
+
+
+        .skill-tag-simple {
+            background-color: #E6FFFA; color: var(--accent-color); padding: 0.6rem 1.2rem; 
+            border-radius: 9999px; font-size: 0.9rem; font-weight: 600; 
+            transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1); 
+            border: 1px solid var(--accent-color); 
+        }
+        .skill-tag-simple:hover {
+            background-color: var(--accent-color); color: white; transform: scale(1.1) rotate(3deg); 
+            box-shadow: 0 4px 12px rgba(var(--accent-color-rgb), 0.4); 
+        }
+
+        .connect-card {
+            background-color: var(--bg-card); padding: 2.75rem; border-radius: 0.75rem;
+            box-shadow: 0 12px 30px -5px var(--shadow-medium), 0 8px 15px -6px var(--shadow-light);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+        }
+        .connect-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 40px -8px var(--shadow-medium), 0 12px 25px -10px var(--shadow-light);
+        }
+        .btn-secondary {
+            background-color: transparent; color: var(--accent-color); border: 2px solid var(--accent-color);
+            padding: 0.875rem 2rem; border-radius: 0.5rem; font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            display: inline-flex; align-items: center;
+        }
+        .btn-secondary:hover {
+            background-color: var(--accent-color); color: white; transform: translateY(-4px) scale(1.04); 
+            box-shadow: 0 8px 22px rgba(var(--accent-color-rgb), 0.35); 
+        }
+        .btn-secondary svg { margin-right: 0.75rem; transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); } 
+        .btn-secondary:hover svg { transform: rotate(-15deg) scale(1.1); }
+
+        #wechatQrImageSimple {
+            transition: opacity 0.4s ease-in-out, max-height 0.4s ease-in-out, transform 0.4s ease-in-out;
+            max-height: 0; opacity: 0; overflow: hidden;
+            transform: translateY(-10px) scale(0.95); transform-origin: top;
+            margin-top: 1rem; border-radius: 0.375rem;
+        }
+        #wechatQrImageSimple.shown { max-height: 300px; opacity: 1; transform: translateY(0) scale(1); }
+        .social-icon { color: var(--text-muted); transition: color 0.3s ease, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); } 
+        .social-icon:hover { color: var(--accent-color); transform: scale(1.3) rotate(8deg); }
+
+        .copy-feedback-simple {
+            font-size: 0.875rem; color: var(--accent-color); margin-top: 0.5rem;
+            height: 1.25rem; opacity: 0; transition: opacity 0.3s ease;
+        }
+        .copy-feedback-simple.visible { opacity: 1; }
+
+        footer {
+            background-color: var(--bg-section-alt); color: var(--text-muted);
+            padding: 2.5rem 1rem; font-size: 0.875rem; 
+        }
+
+        #preloader-simple {
+            position: fixed; inset: 0; z-index: 9999; display: flex; flex-direction: column;
+            align-items: center; justify-content: center; background-color: var(--bg-main);
+            opacity: 1; transition: opacity 0.8s cubic-bezier(0.77,0,0.175,1) 0.3s, visibility 0.8s cubic-bezier(0.77,0,0.175,1) 0.3s; 
+            visibility: visible;
+        }
+        #preloader-simple.fade-out { opacity: 0; visibility: hidden; }
+        .loader-simple { 
+            width: 50px; height: 50px;
+            border: 4px solid rgba(var(--accent-color-rgb), 0.2);
+            border-left-color: var(--accent-color);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite; 
+            margin-bottom: 1.5rem;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .preloader-text-simple { 
+            font-family: 'Montserrat', 'Noto Sans SC', sans-serif; font-size: 2.5rem; 
+            font-weight: 800; color: var(--text-primary); letter-spacing: 0.075em; 
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.15); 
+            animation: pulse-text-fancy 1.8s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); 
+        }
+        @keyframes pulse-text-fancy {
+            from { opacity: 0.6; transform: scale(0.97); }
+            to { opacity: 1; transform: scale(1.03); }
+        }
+
+
+        #visitorCounterWidget {
+            position: fixed; top: 1.25rem; left: 1.25rem; 
+            background-color: rgba(255, 255, 255, 0.9); 
+            color: var(--text-primary); 
+            padding: 0.6rem 1rem; border-radius: 0.5rem; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+            font-size: 0.875rem; 
+            font-weight: 600; z-index: 1000; backdrop-filter: blur(8px); 
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); 
+        }
+        #visitorCounterWidget:hover { transform: scale(1.08); }
+
+
+        #exitDialogModalContainer {
+            background-color: var(--bg-card); color: var(--text-primary);
+            border-radius: 0.75rem; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15), 0 5px 10px rgba(0,0,0,0.1);
+            max-width: 28rem; padding: 2rem; text-align: center;
+        }
+        #exitDialogModalContainer h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; }
+        #exitDialogModalContainer p { margin-bottom: 0.5rem; color: var(--text-secondary); }
+        #exitDialogModalContainer #timeSpent { color: var(--accent-color); font-weight: 600; }
+        #exitDialogModalContainer .dialog-buttons button { 
+            padding-top: 0.6rem; padding-bottom: 0.6rem; padding-left: 1.75rem; padding-right: 1.75rem; 
+            border-radius: 0.5rem; font-weight: 600; 
+            transition: all 0.25s ease; 
+        }
+        #exitDialogModalContainer #closeExitDialogBtn { 
+            background-color: var(--accent-color); color: white;
+        }
+        #exitDialogModalContainer #closeExitDialogBtn:hover {
+            background-color: var(--accent-color-darker); transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        #main-content-simple { opacity: 0; transition: opacity 1s cubic-bezier(0.215, 0.610, 0.355, 1) 0.5s; } 
+        #main-content-simple.loaded { opacity: 1; }
+
+    </style>
+</head>
+<body class="antialiased">
+
+    <div id="preloader-simple">
+        <div class="loader-simple"></div>
+        <p class="preloader-text-simple font-noto-sans-sc">正在加载老云宇宙中...</p>
+    </div>
+
+    <div id="visitorCounterWidget">
+        访问次数: <span id="visitorCount">加载中...</span>
+    </div>
+
+    <div id="exitDialogModalWrapper" class="hidden fixed inset-0 bg-black bg-opacity-60 items-center justify-center z-[9999] p-4 transition-opacity duration-300 ease-in-out opacity-0">
+        <div id="exitDialogModalContainer" class="transform transition-all duration-300 ease-out scale-95 opacity-0">
+            <h3>下次再见！</h3>
+            <p>感谢你的耐心观看，</p>
+            <p>你这次观看了 <span id="timeSpent">计算中...</span></p>
+            <div class="dialog-buttons flex justify-center mt-6"> 
+                <button id="closeExitDialogBtn">好的，知道了</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="main-content-simple">
+        <nav class="navbar-sticky sticky top-0 z-50 w-full" data-aos="fade-down" data-aos-duration="700" data-aos-easing="ease-out-cubic">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <div class="flex items-center"> 
+                        <a href="#" class="nav-logo-text text-2xl font-montserrat font-bold text-primary hover:text-accent-color">老云宇宙</a> 
+                    </div>
+                    <div class="hidden md:flex items-center space-x-2">
+                        <a href="#hero" class="nav-link-simple">首页</a> 
+                        <a href="#about-me" class="nav-link-simple">关于我</a>
+                        <a href="#laoyun-resume" class="nav-link-simple">老云履历</a>
+                        <a href="#laoyun-life-journey" class="nav-link-simple">老云生涯</a>
+                        <a href="#forge" class="nav-link-simple">项目作品</a> 
+                        <a href="#capability-overview" class="nav-link-simple">能力概览</a>
+                        <a href="#laoyun-life" class="nav-link-simple">老云的生活</a> 
+                        <a href="#laoyun-talk" class="nav-link-simple">老云TALK</a> 
+                        <a href="#connect" class="nav-link-simple">联系我</a>
+                    </div>
+                    <div class="md:hidden"> 
+                        <button id="mobile-menu-button-simple" class="mobile-menu-button p-2 rounded-md focus:outline-none"> 
+                            <svg class="h-7 w-7" stroke="currentColor" fill="none" viewBox="0 0 24 24"> 
+                                <path id="menu-icon-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> 
+                                <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path> 
+                            </svg> 
+                        </button> 
+                    </div>
+                </div>
+            </div>
+            <div class="md:hidden hidden" id="mobile-menu-simple">
+                <div class="px-2 pt-2 pb-4 space-y-2 sm:px-3 border-t border-border-color"> 
+                    <a href="#hero" class="nav-link-simple block text-center py-2">首页</a> 
+                    <a href="#about-me" class="nav-link-simple block text-center py-2">关于我</a>
+                    <a href="#laoyun-resume" class="nav-link-simple block text-center py-2">老云履历</a> 
+                    <a href="#laoyun-life-journey" class="nav-link-simple block text-center py-2">老云生涯</a> 
+                    <a href="#forge" class="nav-link-simple block text-center py-2">项目作品</a> 
+                    <a href="#capability-overview" class="nav-link-simple block text-center py-2">能力概览</a>
+                    <a href="#laoyun-life" class="nav-link-simple block text-center py-2">老云的生活</a> 
+                    <a href="#laoyun-talk" class="nav-link-simple block text-center py-2">老云TALK</a> 
+                    <a href="#connect" class="nav-link-simple block text-center py-2">联系我</a> 
+                </div>
+            </div>
+        </nav>
+
+        <section id="hero">
+            <div class="container mx-auto px-4">
+                <h1 class="hero-title font-montserrat" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-out-expo">你好，我是 <span class="text-accent-color">老云</span></h1>
+                <h2 class="hero-subtitle font-lato" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-out-expo">程云杰 // 相信会遇见越来越多同频的小伙伴</h2>
+                <p class="hero-description font-noto-sans-sc" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-out-expo">
+                    跨界操盘手，商业嗅觉敏锐。从销售冠军到社群搭建，再到字节跳动商家运营。现已全身心投入AI领域，立志革新二手车市场。
+                </p>
+                <a href="#about-me" class="btn-primary font-montserrat" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="800" data-aos-easing="ease-out-back">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clip-rule="evenodd" /></svg>
+                    了解更多关于我
+                </a>
+            </div>
+        </section>
+
+        <section id="about-me">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title font-montserrat" data-aos="fade-up" data-aos-easing="ease-out-cubic">关于我</h2>
+                <p class="section-subtitle font-noto-sans-sc" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-out-cubic">很难表达什么是真实的自己，但是何为真实何为虚假？</p>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="content-card p-6" data-aos="fade-right" data-aos-delay="200" data-aos-duration="700" data-aos-easing="ease-out-quad">
+                        <h4 class="text-xl font-montserrat font-semibold text-accent-color mb-3">我的特质 (INFP)</h4>
+                        <p class="font-noto-sans-sc text-text-secondary">
+                            作为一名INFP理想主义探索者，我拥有天马行空的想象力和丰沛的内心世界，这使我对未知充满好奇，乐于拥抱新事物。我擅长共情，能敏锐捕捉他人需求，并致力于创造真正有价值和意义的事物。强大的主观能动性驱使我主动出击，将想法付诸实践。我深知保持正念的重要性，在快节奏的探索中寻求内心的平和与专注，做到动静结合，在思考与行动中不断进化。
+                        </p>
+                    </div>
+                    <div class="content-card p-6" data-aos="fade-left" data-aos-delay="300" data-aos-duration="700" data-aos-easing="ease-out-quad">
+                        <h4 class="text-xl font-montserrat font-semibold text-accent-color mb-3">核心驱动</h4>
+                        <p class="font-noto-sans-sc text-text-secondary">用AI技术赋能传统行业，特别是二手车市场。渴望成为一名优秀的企业家，通过创新与实干，为行业带来积极变革，为社会进步贡献力量，最终实现个人价值与社会价值的统一。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="laoyun-resume"> 
+            <div class="container mx-auto px-4">
+                <h2 class="section-title font-montserrat" data-aos="fade-up" data-aos-easing="ease-out-cubic">老云履历</h2>
+                <p class="section-subtitle font-noto-sans-sc" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-out-cubic">人生仅此，不做才辜负浪费。</p>
+                <div class="timeline-simple">
+                    <div class="timeline-simple-item" data-aos="fade-up" data-aos-anchor=".timeline-simple" data-aos-offset="100" data-aos-delay="200" data-aos-duration="600" data-aos-easing="ease-out-sine">
+                        <div class="timeline-simple-dot" style="animation-delay: 0.8s, 1.4s;"></div> 
+                        <div class="timeline-simple-content">
+                            <h3 class="timeline-title font-montserrat">字节跳动 - 商家运营</h3>
+                            <p class="timeline-date font-lato">2024.06 - 2024.11</p>
+                            <ul class="list-disc space-y-1">
+                                <li>赋能1300+抖音新商家从0到1，月均GMV3万+，峰值85W+。</li>
+                                <li>协助搭建直播间，优化内容与互动，提升账号活跃度。</li>
+                                <li>荣誉：【培训新人王】、【创享生活家】（季度TOP3）。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-simple-item" data-aos="fade-up" data-aos-anchor=".timeline-simple" data-aos-offset="100" data-aos-delay="350" data-aos-duration="600" data-aos-easing="ease-out-sine">
+                        <div class="timeline-simple-dot" style="animation-delay: 0.95s, 1.55s;"></div> 
+                        <div class="timeline-simple-content">
+                            <h3 class="timeline-title font-montserrat">天台露营餐酒吧 - 活动运营主管</h3>
+                            <p class="timeline-date font-lato">2023.08 - 2024.03</p>
+                            <ul class="list-disc space-y-1">
+                                <li>独立运营小红书/抖音，打造“成都夜生活”IP。</li>
+                                <li>策划100+创意活动，吸引5000+人次，多篇内容获平台推荐。</li>
+                                <li>短期内实现20%收益率并成功退出。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-simple-item" data-aos="fade-up" data-aos-anchor=".timeline-simple" data-aos-offset="100" data-aos-delay="500" data-aos-duration="600" data-aos-easing="ease-out-sine">
+                        <div class="timeline-simple-dot" style="animation-delay: 1.1s, 1.7s;"></div> 
+                        <div class="timeline-simple-content">
+                            <h3 class="timeline-title font-montserrat">大家财产保险 - 车险销售主管</h3>
+                            <p class="timeline-date font-lato">2022.01 - 2023.06</p>
+                            <ul class="list-disc space-y-1">
+                                <li>入行3个月即成为销冠，累计9个月销冠。</li>
+                                <li>管理25人团队，实现零差评、91%续签率，获区域最佳团队。</li>
+                            </ul>
+                        </div>
+                    </div>
+                     <div class="timeline-simple-item" data-aos="fade-up" data-aos-anchor=".timeline-simple" data-aos-offset="100" data-aos-delay="650" data-aos-duration="600" data-aos-easing="ease-out-sine">
+                        <div class="timeline-simple-dot" style="animation-delay: 1.25s, 1.85s;"></div> 
+                        <div class="timeline-simple-content">
+                            <h3 class="timeline-title font-montserrat">剧本杀店 - 创始人</h3>
+                            <p class="timeline-date font-lato">2020.05 - 2021.11</p>
+                            <ul class="list-disc space-y-1">
+                                <li>从0打造120平剧本杀店，4个月实现盈利。</li>
+                                <li>管理60+团队，月均营收19万，利润超6万。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="laoyun-life-journey">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title font-montserrat" data-aos="fade-up" data-aos-easing="ease-out-cubic">老云生涯</h2>
+                <p class="section-subtitle font-noto-sans-sc" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-out-cubic">一路走来，每一步都算数。过往的经历，塑造了今天的我。</p>
+                <div class="timeline-life-journey">
+                    <div class="timeline-life-journey-item" data-aos="fade-up" data-aos-anchor=".timeline-life-journey" data-aos-offset="100" data-aos-delay="200" data-aos-duration="600" data-aos-easing="ease-out-sine">
+                        <div class="timeline-life-journey-dot" style="animation-delay: 0.8s, 1.5s;"></div>
+                        <div class="timeline-life-journey-content-wrapper">
+                            <div class="timeline-life-journey-summary">
+                                <h3 class="timeline-title font-montserrat">三岁看大七岁看老</h3>
+                                <p class="timeline-date font-lato">2006 - 2013 · 铜矿二小</p>
+                            </div>
+                            <div class="timeline-life-journey-details">
+                                <p>四年级逃课去黑网吧。<br>
+                                记得小学“痛斥”班主任给报名她语文辅导班的同学高分作文不公平！</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-life-journey-item" data-aos="fade-up" data-aos-anchor=".timeline-life-journey" data-aos-offset="100" data-aos-delay="300" data-aos-duration="600" data-aos-easing="ease-out-sine">
+                        <div class="timeline-life-journey-dot" style="animation-delay: 0.9s, 1.6s;"></div>
+                        <div class="timeline-life-journey-content-wrapper">
+                            <div class="timeline-life-journey-summary">
+                                <h3 class="timeline-title font-montserrat">没有能力但有胆子</h3>
+                                <p class="timeline-date font-lato">2013 - 2017 · 铜矿中学</p>
+                            </div>
+                            <div class="timeline-life-journey-details">
+                                <p>一所完全中学，初中经常惹事，高中部看我非常不爽，除了把妹就想着怎么揍我。<br>
+                                全校第一个摄像头装在我们班门口（与我无关，最多占20%的原因。<br>
+                                初三和同学一起对抗“社会人”结果还把他们打跑了哈哈哈！<br>
+                                高二出去做艺术生,毕业后以不到三百分的高考成绩考上二本（还好专业分高。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-life-journey-item" data-aos="fade-up" data-aos-anchor=".timeline-life-journey" data-aos-offset="100" data-aos-delay="400" data-aos-duration="600" data-aos-easing="ease-out-sine">
+                        <div class="timeline-life-journey-dot" style="animation-delay: 1.0s, 1.7s;"></div>
+                        <div class="timeline-life-journey-content-wrapper">
+                            <div class="timeline-life-journey-summary">
+                                <h3 class="timeline-title font-montserrat">稀里糊涂结束了</h3>
+                                <p class="timeline-date font-lato">2017 - 2021 · 四川文理学院</p>
+                            </div>
+                            <div class="timeline-life-journey-details">
+                                <p>1/3学2/3玩，结果专业也落下、玩也没玩出名堂。<br>
+                                    四年大学生活总结就是：脑子空空，没有目标。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-life-journey-item" data-aos="fade-up" data-aos-anchor=".timeline-life-journey" data-aos-offset="100" data-aos-delay="500" data-aos-duration="600" data-aos-easing="ease-out-sine">
+                        <div class="timeline-life-journey-dot" style="animation-delay: 1.1s, 1.8s;"></div>
+                        <div class="timeline-life-journey-content-wrapper">
+                            <div class="timeline-life-journey-summary">
+                                <h3 class="timeline-title font-montserrat">开始踏入社会</h3>
+                                <p class="timeline-date font-lato">2021 - 2022 · 四处尝试</p>
+                            </div>
+                            <div class="timeline-life-journey-details">
+                                <p>第一份工作是汽车保险销售，本身就喜欢车对这个工作也满怀期待，但后来发现这个根本不是自己想要的。<br>
+                                一年做过很多工作，服务员、工地搬砖、给某位要员做驾驶员等等就是不愿意听父母安排。<br>
+                                独自去厦门工作，而后被家人劝回老家。</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="timeline-life-journey-item" data-aos="fade-up" data-aos-anchor=".timeline-life-journey" data-aos-offset="100" data-aos-delay="600" data-aos-duration="600" data-aos-easing="ease-out-sine">
+                        <div class="timeline-life-journey-dot" style="animation-delay: 1.2s, 1.9s;"></div>
+                        <div class="timeline-life-journey-content-wrapper">
+                            <div class="timeline-life-journey-summary">
+                                <h3 class="timeline-title font-montserrat">终于“找到”目标</h3>
+                                <p class="timeline-date font-lato">2022 - 2023 · 奔赴成都</p>
+                            </div>
+                            <div class="timeline-life-journey-details">
+                                <p>回家在某国企工作一年后感悟，人生不应该如此，我一定要实现自己价值。<br>再三考虑后独自一人驱车22小时前往成都发展。</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="timeline-life-journey-item" data-aos="fade-up" data-aos-anchor=".timeline-life-journey" data-aos-offset="100" data-aos-delay="700" data-aos-duration="600" data-aos-easing="ease-out-sine">
+                        <div class="timeline-life-journey-dot" style="animation-delay: 1.3s, 2.0s;"></div>
+                        <div class="timeline-life-journey-content-wrapper">
+                            <div class="timeline-life-journey-summary">
+                                <h3 class="timeline-title font-montserrat">自以为是的觉醒</h3>
+                                <p class="timeline-date font-lato">2023 - 2024 · 折磨自己</p>
+                            </div>
+                            <div class="timeline-life-journey-details">
+                                <p>刚到成都在完全不熟悉商业模式的情况下投资一家酒吧（结果可想而知。<br>23年底被忽悠缴纳2.88万元学费什么都没有学到的学习，就此积蓄全部掏空。<br>同时刷新自己世界观，重新洗刷自己认知。<br>现在想想没有这个经历也没有现在的我。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-life-journey-item" data-aos="fade-up" data-aos-anchor=".timeline-life-journey" data-aos-offset="100" data-aos-delay="800" data-aos-duration="600" data-aos-easing="ease-out-sine">
+                        <div class="timeline-life-journey-dot" style="animation-delay: 1.4s, 2.1s;"></div>
+                        <div class="timeline-life-journey-content-wrapper">
+                            <div class="timeline-life-journey-summary">
+                                <h3 class="timeline-title font-montserrat">也许...方向对了？</h3>
+                                <p class="timeline-date font-lato">2024 - 2025 · 痛定思痛，迎接AI</p>
+                            </div>
+                            <div class="timeline-life-journey-details">
+                                <p>经历挫折后，痛定思痛，一年内阅读近30本书籍，逐渐明晰了个人方向与目标。<br>先开始尝试做自媒体，教大家如何检测二手车。<br>随后加入一家某互联网大厂，开始系统建立互联网思维。<br>离开大厂后，开始接触AI，全新的视野由此打开。儿时对“一人公司”的憧憬，似乎也因此看到了实现的曙光。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-life-journey-item" data-aos="fade-up" data-aos-anchor=".timeline-life-journey" data-aos-offset="100" data-aos-delay="900" data-aos-duration="600" data-aos-easing="ease-out-sine">
+                        <div class="timeline-life-journey-dot" style="animation-delay: 1.5s, 2.2s;"></div>
+                        <div class="timeline-life-journey-content-wrapper">
+                            <div class="timeline-life-journey-summary">
+                                <h3 class="timeline-title font-montserrat">对对！就是这个！</h3>
+                                <p class="timeline-date font-lato">2025 - 至今 · 终于找到目标</p>
+                            </div>
+                            <div class="timeline-life-journey-details">
+                                <p>开始深入AI行业，打造自己的成长平台，重获信心。<br>终于找到自己一直要做的事情了！<br>我TM还不信干不成了！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="forge">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title font-montserrat" data-aos="fade-up" data-aos-easing="ease-out-cubic">项目作品</h2>
+                <p class="section-subtitle font-noto-sans-sc" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-out-cubic">一点点积累，成为自己真正想成为的人。</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="content-card" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="600" data-aos-easing="ease-out-back">
+                        <h3 class="card-title font-montserrat text-accent-color">抖音商家增长引擎</h3>
+                        <p class="card-meta font-lato">字节跳动时期</p>
+                        <p class="card-description font-noto-sans-sc">挑战快速赋能新商家规模化增长。通过0到1运营体系、个性化策略，结合直播、达人、爆品玩法，实现显著业绩。</p>
+                    </div>
+                    <div class="content-card" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="600" data-aos-easing="ease-out-back">
+                        <h3 class="card-title font-montserrat text-accent-color">城市夜生活IP打造</h3>
+                        <p class="card-meta font-lato">天台露营餐酒吧</p>
+                        <p class="card-description font-noto-sans-sc">定位独特高空娱乐体验。策划百余场创意活动，有效运用社交媒体运营，成功塑造品牌IP并实现盈利退出。</p>
+                    </div>
+                    <div class="content-card" data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="600" data-aos-easing="ease-out-back">
+                        <h3 class="card-title font-montserrat text-accent-color">保险销售精英之路</h3>
+                        <p class="card-meta font-lato">大家财产保险</p>
+                        <p class="card-description font-noto-sans-sc">快速成长为销冠并保持纪录。带领团队创造佳绩，注重客户服务与团队建设，实现高续签率与零差评口碑。</p>
+                    </div>
+                     <div class="content-card lg:col-span-2" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="600" data-aos-easing="ease-out-back">
+                        <h3 class="card-title font-montserrat text-accent-color">荣誉与认证</h3>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>字节跳动【创享生活家】 & 【培训新人王】</li>
+                            <li>CSM运营能力认证</li>
+                            <li>高级二手车检测师</li>
+                            <li>LOL全国高校联赛SOLO冠军 & 四川省冠军</li>
+                            <li>Force卡丁车车队冠军</li>
+                        </ul>
+                    </div>
+                    <div class="content-card" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="600" data-aos-easing="ease-out-back">
+                        <h3 class="card-title font-montserrat text-accent-color">教育背景</h3>
+                        <p class="text-lg font-montserrat text-text-primary font-semibold">四川文理学院</p>
+                        <p class="text-md text-text-muted font-noto-sans-sc">音乐学 | 本科 (2017.9 - 2021.7)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="capability-overview">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title font-montserrat" data-aos="fade-up" data-aos-easing="ease-out-cubic">能力概览</h2>
+                <p class="section-subtitle font-noto-sans-sc" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-out-cubic">时常在想要是像海绵宝宝一样眼睛能直接看到自己脑子进就好了哈哈哈哈。</p>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-x-12 gap-y-6"> 
+                    <div class="space-y-6" data-aos="fade-right" data-aos-delay="200" data-aos-duration="700" data-aos-easing="ease-out-quad">
+                        <div class="capability-item">
+                            <div class="capability-icon-main">
+                                <div class="capability-icon">
+                                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" stroke-width="2" fill="none" stroke="currentColor">
+                                        <circle cx="50" cy="40" r="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M50 50 Q50 60 40 70 L60 70 Q50 60 50 50" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <line x1="50" y1="70" x2="50" y2="85" stroke-linecap="round"/>
+                                        <line x1="45" y1="85" x2="55" y2="85" stroke-linecap="round"/>
+                                        <path id="imagination-bulb" d="M50 10 Q45 15 45 20 A5 5 0 1 0 55 20 Q55 15 50 10 Z" stroke-linecap="round" stroke-linejoin="round" fill="#fde047" stroke="currentColor"/>
+                                        <line x1="50" y1="22" x2="50" y2="25" stroke-linecap="round"/>
+                                        <line x1="47" y1="27" x2="53" y2="27" stroke-linecap="round"/>
+                                        <line id="imagination-ray-1" class="imagination-ray" x1="50" y1="5" x2="50" y2="2" stroke-linecap="round"/>
+                                        <line id="imagination-ray-2" class="imagination-ray" x1="42" y1="8" x2="40" y2="6" stroke-linecap="round"/>
+                                        <line id="imagination-ray-3" class="imagination-ray" x1="58" y1="8" x2="60" y2="6" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <div class="capability-text">
+                                    <div class="capability-name">想象力</div>
+                                    <div class="rating-display">
+                                        <div class="rating-bar-bg"><div class="rating-bar-fill" data-rating-value="4.5"></div></div>
+                                        <span class="rating-value-text">4.5 / 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="capability-description-wrapper">
+                                <div class="capability-description-content">
+                                    <p>每天睡前想各种天马行空的问题导致黑眼圈非常严重。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="capability-item">
+                            <div class="capability-icon-main">
+                                <div class="capability-icon">
+                                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" stroke-width="2" fill="none" stroke="currentColor">
+                                        <g id="execution-saw-group">
+                                            <circle cx="60" cy="35" r="7" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M60 42 L55 65 L50 60" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M55 65 L65 70" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M58 45 L70 40 L80 50" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <polygon points="75,45 90,60 65,70 60,55" stroke-linecap="round" stroke-linejoin="round" fill="currentColor" opacity="0.1"/>
+                                            <line x1="73" y1="48" x2="63" y2="60" stroke-width="1" stroke="currentColor" opacity="0.7"/>
+                                            <line x1="77" y1="52" x2="67" y2="64" stroke-width="1" stroke="currentColor" opacity="0.7"/>
+                                            <line x1="81" y1="56" x2="71" y2="68" stroke-width="1" stroke="currentColor" opacity="0.7"/>
+                                        </g>
+                                        <path d="M20 75 Q40 70 55 80 L50 90 L15 85 Z" stroke-linecap="round" stroke-linejoin="round" fill="currentColor" opacity="0.2"/>
+                                        <circle id="execution-dust-1" class="execution-dust" cx="60" cy="75" r="1" fill="currentColor" stroke="none" opacity="0.5"/>
+                                        <circle id="execution-dust-2" class="execution-dust" cx="65" cy="78" r="0.8" fill="currentColor" stroke="none" opacity="0.5"/>
+                                        <circle id="execution-dust-3" class="execution-dust" cx="55" cy="72" r="0.9" fill="currentColor" stroke="none" opacity="0.5"/>
+                                    </svg>
+                                </div>
+                                <div class="capability-text">
+                                    <div class="capability-name">执行力</div>
+                                    <div class="rating-display">
+                                        <div class="rating-bar-bg"><div class="rating-bar-fill" data-rating-value="4.5"></div></div>
+                                        <span class="rating-value-text">4.5 / 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="capability-description-wrapper">
+                                <div class="capability-description-content">
+                                    <p>想到马上就去做，现在周末也不赖床了，洗衣机洗完衣服马上就去晒，还有谁能做到哈哈哈。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="capability-item">
+                            <div class="capability-icon-main">
+                                 <div class="capability-icon">
+                                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" stroke-width="2" fill="none" stroke="currentColor">
+                                        <circle cx="35" cy="40" r="8"/>
+                                        <path d="M35 48 V70 H30 V85 H40 V70 H35"/>
+                                        <path d="M35 55 Q45 50 55 55"/>
+                                        <path d="M55 55 L60 50 L75 55 L70 65 L58 63 Z" fill="currentColor" opacity="0.1"/>
+                                        <path d="M75 55 L85 50 L80 45 L70 50" fill="currentColor" opacity="0.1"/>
+                                        <circle id="persistence-drop-1" class="persistence-drop" cx="80" cy="60" r="2" fill="currentColor" stroke="none" opacity="0.8"/>
+                                        <circle id="persistence-drop-2" class="persistence-drop" cx="75" cy="65" r="1.5" fill="currentColor" stroke="none" opacity="0.8"/>
+                                        <circle id="persistence-drop-3" class="persistence-drop" cx="82" cy="68" r="1.8" fill="currentColor" stroke="none" opacity="0.8"/>
+                                        <g id="persistence-plant">
+                                            <path d="M60 90 Q60 80 65 80 T70 90" stroke="currentColor" stroke-width="3"/>
+                                            <ellipse cx="62" cy="75" rx="5" ry="3" fill="currentColor" opacity="0.6" transform="rotate(-30 62 75)" stroke="none"/>
+                                            <ellipse cx="68" cy="73" rx="5" ry="3" fill="currentColor" opacity="0.6" transform="rotate(30 68 73)" stroke="none"/>
+                                            <ellipse id="persistence-plant-leaf-top" cx="65" cy="68" rx="4" ry="2.5" fill="currentColor" opacity="0.6" stroke="none"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="capability-text">
+                                    <div class="capability-name">持续力</div>
+                                    <div class="rating-display">
+                                        <div class="rating-bar-bg"><div class="rating-bar-fill" data-rating-value="4"></div></div>
+                                        <span class="rating-value-text">4.0 / 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="capability-description-wrapper">
+                                <div class="capability-description-content">
+                                    <p>玩泰达米尔能玩十几年依旧热爱。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="capability-item">
+                            <div class="capability-icon-main">
+                                <div class="capability-icon">
+                                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" stroke-width="2" fill="none" stroke="currentColor">
+                                        <circle cx="50" cy="30" r="8"/>
+                                        <path d="M50 38 C40 45 40 60 50 65 C60 60 60 45 50 38 Z"/>
+                                        <line x1="20" y1="75" x2="80" y2="75" stroke-width="3"/>
+                                        <line x1="25" y1="75" x2="25" y2="90" stroke-width="3"/>
+                                        <line x1="75" y1="75" x2="75" y2="90" stroke-width="3"/>
+                                        <path d="M35 60 L65 60 L60 73 L30 73 Z" fill="currentColor" opacity="0.1"/>
+                                        <line id="learning-pen" x1="55" y1="50" x2="65" y2="55" stroke-width="2.5"/>
+                                        <line id="learning-text-line-1" class="learning-text-line" x1="40" y1="65" x2="55" y2="65" stroke-width="1.5" stroke="currentColor"/>
+                                        <line id="learning-text-line-2" class="learning-text-line" x1="38" y1="68" x2="58" y2="68" stroke-width="1.5" stroke="currentColor" style="animation-delay: 0.3s;"/>
+                                    </svg>
+                                </div>
+                                <div class="capability-text">
+                                    <div class="capability-name">学习力</div>
+                                    <div class="rating-display">
+                                        <div class="rating-bar-bg"><div class="rating-bar-fill" data-rating-value="4.5"></div></div>
+                                        <span class="rating-value-text">4.5 / 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="capability-description-wrapper">
+                                <div class="capability-description-content">
+                                    <p>目前所有事情上手都非常快，这个网页从接触gemini+cursor开始就在做，花了30小时做出来。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6" data-aos="fade-left" data-aos-delay="300" data-aos-duration="700" data-aos-easing="ease-out-quad">
+                        <div class="capability-item">
+                            <div class="capability-icon-main">
+                                <div class="capability-icon">
+                                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" stroke-width="2" fill="none" stroke="currentColor">
+                                        <g id="driving-car-body-main">
+                                            <path d="M15 70 Q20 55 40 55 L60 55 Q80 55 85 70 L15 70 Z" fill="currentColor" opacity="0.2"/>
+                                            <path d="M30 55 Q35 40 50 40 Q65 40 70 55" fill="currentColor" opacity="0.1"/>
+                                            <circle cx="50" cy="48" r="5" fill="none" stroke="currentColor"/>
+                                        </g>
+                                        <circle id="driving-wheel-1" class="driving-wheel" cx="30" cy="70" r="8" fill="currentColor" stroke="none"/>
+                                        <circle id="driving-wheel-2" class="driving-wheel" cx="70" cy="70" r="8" fill="currentColor" stroke="none" style="animation-delay: 0.05s;"/>
+                                        <circle cx="30" cy="70" r="3" fill="currentColor" opacity="0.3" stroke="none"/>
+                                        <circle cx="70" cy="70" r="3" fill="currentColor" opacity="0.3" stroke="none"/>
+                                        <line class="running-speed-line" x1="5" y1="60" x2="15" y2="60" stroke-width="1.5"/>
+                                        <line class="running-speed-line" x1="0" y1="65" x2="10" y2="65" stroke-width="1.5" style="animation-delay: 0.1s;"/>
+                                    </svg>
+                                </div>
+                                <div class="capability-text">
+                                    <div class="capability-name">驾驶</div>
+                                     <div class="rating-display">
+                                        <div class="rating-bar-bg"><div class="rating-bar-fill" data-rating-value="5"></div></div>
+                                        <span class="rating-value-text">5 / 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="capability-description-wrapper">
+                                <div class="capability-description-content">
+                                    <p>C1D驾照，卡丁车赛车冠军，街道安全+刺激并存。</p>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="capability-item">
+                            <div class="capability-icon-main">
+                                <div class="capability-icon">
+                                     <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" stroke-width="2" fill="none" stroke="currentColor">
+                                        <circle cx="50" cy="55" r="8"/>
+                                        <path d="M50 63 C40 70 40 85 50 90 C60 85 60 70 50 63 Z"/>
+                                        <line x1="20" y1="92" x2="80" y2="92" stroke-width="3"/>
+                                        <rect id="gaming-screen" x="30" y="20" width="40" height="30" rx="3" ry="3" fill="currentColor" opacity="0.2"/>
+                                        <path d="M48 50 L52 50 L50 55 Z" fill="currentColor"/>
+                                        <circle id="gaming-element-1" class="gaming-screen-element" cx="40" cy="30" r="3" fill="currentColor" opacity="0.8" stroke="none"/>
+                                        <rect id="gaming-element-2" class="gaming-screen-element" x="50" y="35" width="10" height="5" fill="currentColor" opacity="0.8" stroke="none"/>
+                                        <path id="gaming-element-3" class="gaming-screen-element" d="M45 42 L55 42 L50 35 Z" fill="currentColor" opacity="0.8" stroke="none"/>
+                                        <rect x="35" y="75" width="30" height="10" rx="2" ry="2" fill="currentColor" opacity="0.1"/>
+                                    </svg>
+                                </div>
+                                <div class="capability-text">
+                                    <div class="capability-name">游戏</div>
+                                    <div class="rating-display">
+                                        <div class="rating-bar-bg"><div class="rating-bar-fill" data-rating-value="4"></div></div>
+                                        <span class="rating-value-text">4.0 / 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="capability-description-wrapper">
+                                <div class="capability-description-content">
+                                    <p>Steam300+游戏，主玩神力科莎AC，ACC，模拟赛车类。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="capability-item">
+                            <div class="capability-icon-main">
+                                <div class="capability-icon">
+                                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" stroke-width="2" fill="none" stroke="currentColor">
+                                        <circle cx="60" cy="30" r="7"/>
+                                        <path d="M60 37 L50 55 L40 50"/>
+                                        <path id="running-arm-front" d="M58 40 L70 45"/> 
+                                        <path id="running-arm-back" d="M55 42 L45 35"/>
+                                        <path id="running-leg-front" d="M50 55 L60 75 L50 85"/>
+                                        <path id="running-leg-back" d="M45 53 L35 70 L25 65"/>
+                                        <line class="running-speed-line" x1="10" y1="55" x2="30" y2="55" stroke-width="1.5"/>
+                                        <line class="running-speed-line" x1="15" y1="65" x2="35" y2="65" stroke-width="1.5" style="animation-delay:0.1s;"/>
+                                        <line class="running-speed-line" x1="5" y1="60" x2="25" y2="60" stroke-width="1.5" style="animation-delay:0.2s;"/>
+                                    </svg>
+                                </div>
+                                <div class="capability-text">
+                                    <div class="capability-name">运动</div>
+                                    <div class="rating-display">
+                                        <div class="rating-bar-bg"><div class="rating-bar-fill" data-rating-value="4"></div></div>
+                                        <span class="rating-value-text">4.0 / 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="capability-description-wrapper">
+                                <div class="capability-description-content">
+                                    <p>有氧+无氧，但是现在懒，把遛狗也算作运动了哈哈哈。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="capability-item">
+                           <div class="capability-icon-main">
+                                <div class="capability-icon">
+                                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" stroke-width="2" fill="none" stroke="currentColor">
+                                        <circle cx="50" cy="35" r="10"/>
+                                        <path d="M50 45 C35 55 35 75 50 85 C65 75 65 55 50 45 Z"/>
+                                        <path id="reading-book-page" d="M25 55 L75 55 L70 80 L30 80 Q25 78 25 55 Z" fill="currentColor" opacity="0.1" stroke-linejoin="round"/>
+                                        <line x1="50" y1="56" x2="50" y2="79" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+                                        <line id="reading-text-line-1" class="reading-text-line" x1="30" y1="60" x2="45" y2="60" stroke-width="1.5" stroke="currentColor"/>
+                                        <line id="reading-text-line-2" class="reading-text-line" x1="55" y1="60" x2="70" y2="60" stroke-width="1.5" stroke="currentColor" style="animation-delay: 0.2s;"/>
+                                        <line id="reading-text-line-3" class="reading-text-line" x1="30" y1="65" x2="45" y2="65" stroke-width="1.5" stroke="currentColor" style="animation-delay: 0.4s;"/>
+                                        <line class="reading-text-line" x1="55" y1="65" x2="70" y2="65" stroke-width="1.5" stroke="currentColor" style="animation-delay: 0.6s;"/>
+                                        <line class="reading-text-line" x1="30" y1="70" x2="45" y2="70" stroke-width="1.5" stroke="currentColor" style="animation-delay: 0.8s;"/>
+                                        <line class="reading-text-line" x1="55" y1="70" x2="70" y2="70" stroke-width="1.5" stroke="currentColor" style="animation-delay: 1s;"/>
+                                    </svg>
+                                </div>
+                                <div class="capability-text">
+                                    <div class="capability-name">读书</div>
+                                     <div class="rating-display">
+                                        <div class="rating-bar-bg"><div class="rating-bar-fill" data-rating-value="4.5"></div></div>
+                                        <span class="rating-value-text">4.5 / 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="capability-description-wrapper">
+                                <div class="capability-description-content">
+                                    <p>哲学、心理学、商业三板斧，推荐《活法》《像哲学家一样生活》《你的敏感就是你的天赋》</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="laoyun-life">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title font-montserrat" data-aos="fade-up" data-aos-easing="ease-out-cubic">老云的生活</h2>
+                <p class="section-subtitle font-noto-sans-sc" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-out-cubic">生活不止眼前的苟且，还有诗和远方的田野。以及一些碎碎念。</p>
+                <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div class="life-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" data-aos-easing="ease-out-quad">
+                        <div class="life-card-icon-area">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 21H3.75a.75.75 0 01-.75-.75V13.5a.75.75 0 01.75-.75H5.25m13.5 0h1.5a.75.75 0 01.75.75v6.75a.75.75 0 01-.75.75H17.25" />
+                            </svg>
+                        </div>
+                        <h3 class="life-card-title font-montserrat">日常</h3>
+                        <p class="life-card-description font-noto-sans-sc">记录点滴，感受生活本真。一杯咖啡，一段晨思，皆是日常。</p>
+                    </div>
+                    <div class="life-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600" data-aos-easing="ease-out-quad">
+                        <div class="life-card-icon-area">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+                            </svg>
+                        </div>
+                        <h3 class="life-card-title font-montserrat">工作</h3>
+                        <p class="life-card-description font-noto-sans-sc">专注当下，创造价值。在AI的浪潮中，探索商业的无限可能。</p>
+                    </div>
+                    <div class="life-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600" data-aos-easing="ease-out-quad">
+                        <div class="life-card-icon-area">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.324h5.372c.556 0 .781.75.347 1.086l-4.36 3.172a.563.563 0 00-.182.658l2.125 5.111a.563.563 0 01-.844.62l-4.36-3.172a.563.563 0 00-.656 0l-4.36 3.172a.563.563 0 01-.844-.62l2.125-5.111a.563.563 0 00-.182-.658l-4.36-3.172a.563.563 0 01.347-1.086h5.372a.563.563 0 00.475-.324L11.48 3.5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 13.556L17.25 12l-4.5-3.25-4.5 3.25 1.66 1.556m6.28 0l-1.66-1.556-1.66 1.556m0 0L12 15.25l-1.66-1.694m3.32 0l-1.66 1.694-1.66-1.694" />
+                            </svg>
+                        </div>
+                        <h3 class="life-card-title font-montserrat">爱好</h3>
+                        <p class="life-card-description font-noto-sans-sc">游戏人间，保持热爱。从代码到卡丁车，从音乐到电竞，皆是乐趣。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="laoyun-talk"> 
+            <div class="container mx-auto px-4">
+                <h2 class="section-title font-montserrat" data-aos="fade-up" data-aos-easing="ease-out-cubic">老云TALK</h2>
+                <p class="section-subtitle font-noto-sans-sc" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-out-cubic">关于AI、创业、个人成长的一些思考与探索，持续更新中。</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="content-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700" data-aos-easing="ease-out-quad">
+                        <div class="card-icon-area">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title font-montserrat">AI学习笔记</h3>
+                        <p class="card-description font-noto-sans-sc">记录从零开始学习AI的历程，分享通俗易懂的心得与实用技巧。</p>
+                    </div>
+                    <div class="content-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700" data-aos-easing="ease-out-quad">
+                        <div class="card-icon-area">
+                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v11.494m0 0a8.487 8.487 0 0011.023 0M12 17.747a8.487 8.487 0 01-11.023 0M12 6.253c1.657 0 3 2.803 3 6.247s-1.343 6.247-3 6.247c-1.657 0-3-2.803-3-6.247s1.343-6.247 3-6.247z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253V3.386m0 14.361V20.63m0-17.244A8.487 8.487 0 0112 3.386m0 17.244A8.487 8.487 0 0012 20.63m0-17.244c-1.657 0-3 2.803-3 6.247s1.343 6.247 3 6.247m0 0c1.657 0 3-2.803 3-6.247S13.657 6.253 12 6.253z" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title font-montserrat">二手车行业洞察</h3>
+                        <p class="card-description font-noto-sans-sc">探讨AI及新模式如何为二手车市场带来变革与机遇。</p>
+                    </div>
+                    <div class="content-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700" data-aos-easing="ease-out-quad">
+                        <div class="card-icon-area">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title font-montserrat">内容创作与电商</h3>
+                        <p class="card-description font-noto-sans-sc">分享小红书电商运营实战经验，探讨爆款内容的创作逻辑。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="connect">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="section-title font-montserrat" data-aos="fade-up" data-aos-easing="ease-out-cubic">请联系我</h2>
+                <p class="section-subtitle font-noto-sans-sc" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-out-cubic">不论你有任何想法，都可以与我聊聊，相信总能碰撞出新东西。</p>
+                <div class="max-w-lg mx-auto connect-card" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="700" data-aos-easing="ease-out-back">
+                    <h3 class="text-3xl font-montserrat font-bold text-text-primary mb-3">程云杰 (老云)</h3>
+                    <p class="text-lg text-text-secondary mb-6 font-noto-sans-sc">坐标：中国 · 成都</p>
+                    
+                    <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
+                        <a href="tel:19198135028" class="btn-primary w-full sm:w-auto"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>
+                            电话联系
+                        </a>
+                        <button id="toggleWechatQrBtnSimple" class="btn-secondary w-full sm:w-auto"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.832 8.832 0 01-4.083-.983L2 17l1.003-3.01A7.002 7.002 0 012 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zm-4 0H9v2h2V9z" clip-rule="evenodd" /></svg>
+                            <span id="toggleWechatQrBtnTextSimple">添加微信</span>
+                        </button>
+                    </div>
+                    <img id="wechatQrImageSimple" src="https://shuzijun.obs.cn-south-1.myhuaweicloud.com/%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1%E4%BA%8C%E7%BB%B4%E7%A0%81.png" alt="微信二维码" class="rounded-md mx-auto" style="max-width: 180px;" onerror="this.alt='微信二维码加载失败'; this.src='https://placehold.co/180x180/A0AEC0/E2E8F0?text=QR+Error';">
+                    
+                    <div class="mt-6">
+                        <p class="text-text-secondary font-noto-sans-sc">
+                            邮箱: <a href="mailto:MonsterjokerC@gmail.com" class="text-accent-color hover:underline">MonsterjokerC@gmail.com</a>
+                        </p>
+                        <p class="text-text-secondary font-noto-sans-sc mt-2">
+                            微信号: <span id="wechatIDSimple" class="font-semibold text-text-primary">ShuzijunGTS</span>
+                            <button id="copyWechatBtnSimple" class="ml-2 text-sm text-text-muted hover:text-accent-color underline focus:outline-none">(复制)</button>
+                        </p>
+                        <div id="copyFeedbackSimple" class="copy-feedback-simple"></div>
+                    </div>
+
+                    <div class="flex justify-center space-x-8 mt-8">
+                        <a href="https://space.bilibili.com/17367894" target="_blank" rel="noopener noreferrer" class="social-icon" title="Bilibili">
+                            <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 2133.3333333333335 1024" xmlns="http://www.w3.org/2000/svg"> <path d="M2079.810048 913.566175c-10.01309 0-18.554608 0.799768-26.936172-0.159954-16.987063-1.951433-33.974126-1.567544-50.99318-2.079395-10.972811-0.287916-10.652904-0.287916-11.580634-10.90883-2.71921-32.406582-5.694345-64.781173-8.605499-97.155764-2.527266-28.439735-4.926568-56.91146-7.70976-85.319204-2.527266-26.040432-5.566382-52.016883-8.317583-78.025324-2.623238-24.440897-5.054531-48.913784-7.77374-73.322691a12681.114551 12681.114551 0 0 0-10.684895-92.133223c-3.295042-27.128116-6.558094-54.320213-10.205034-81.416339a20559.272961 20559.272961 0 0 0-17.530905-125.979387c-6.398141-44.723002-14.075909-89.22207-22.105576-133.657156-1.439582-7.965685-1.247637-8.253601 6.36615-9.533229 31.670796-5.406429 63.501545-10.01309 95.716183-9.309295 3.486987 0.095972 7.005964 0.159954 10.460959 0.607823 5.662354 0.703795 8.605499 3.454996 8.925406 10.045081 1.119675 22.969325 2.71921 45.938649 4.414717 68.875983 2.71921 37.589076 5.662354 75.178151 8.477537 112.735236 1.791479 24.184971 3.327033 48.305961 5.150503 72.426951 2.911154 38.772732 5.982261 77.513473 8.925406 116.286205 1.791479 23.705111 3.359024 47.474203 5.182494 71.179313 2.783191 34.805885 5.822308 69.579778 8.637489 104.353672 1.791479 22.137566 3.391014 44.307123 5.278466 66.44469 2.783191 32.79047 5.790317 65.580941 8.63749 98.371411 2.143377 25.592562 4.09481 51.249106 6.270178 77.673426zM853.670395 114.918282c4.638652 0 11.644616-0.511851 18.554607 0.127963 8.797443 0.799768 10.49295 3.071107 11.036793 11.900541 2.527266 40.372267 4.894578 80.776524 7.581796 121.180782 2.943145 43.571337 6.174206 87.078693 9.405267 130.586048 2.975135 39.956388 5.950271 79.912775 9.149341 119.869163 3.486987 43.891244 7.357862 87.718507 10.876839 131.609751 2.655228 33.622229 4.926568 67.244457 7.677768 100.898677 2.623238 31.222926 5.694345 62.38187 8.509527 93.572805 2.399303 26.8402 4.830596 53.71239 7.165918 80.58458 0.735786 8.509527 0.127963 9.053369-9.053369 8.829434-24.025018-0.575833-47.922073-3.391014-71.947091-2.71921-5.502401 0.159954-7.101936-2.367312-8.029666-7.581796-1.983424-11.356699-1.663517-22.905343-2.879163-34.390006-3.295042-30.359177-5.182494-60.846317-7.965685-91.269474-2.495275-27.639967-5.502401-55.215953-8.349574-82.82393-2.527266-25.240664-5.02254-50.481329-7.709759-75.753984-2.687219-24.792795-5.534392-49.61758-8.349573-74.442365-2.591247-22.841362-5.118512-45.682723-7.869713-68.524085-4.062819-33.462275-8.093648-66.92455-12.508365-100.322844-4.062819-30.647093-8.66948-61.198214-12.988225-91.813317-5.886289-41.587914-12.508365-83.079855-19.834236-124.411842a1393.96288 1393.96288 0 0 0-5.310457-28.023856c-0.959721-4.702633-0.095972-7.421843 5.278466-8.157629 14.139891-1.887451 28.24779-4.830596 42.451663-6.206196 14.203872-1.311619 28.407744-3.966847 45.106891-2.71921z m1006.075609 403.33878c27.064134 0 27.703949 0.191944 32.054684 24.536869 5.342447 30.03927 9.08536 60.334465 12.636328 90.62966 3.742912 32.278619 7.517815 64.557238 10.972811 96.867848 2.783191 26.008441 5.118512 52.080864 7.74175 78.089305 2.7512 27.256079 5.662354 54.416185 8.509527 81.640274 1.567544 15.387528 3.039117 30.775056 4.798605 46.130593 0.511851 4.446708-0.831758 6.81402-5.214485 7.325871-9.245313 1.055693-18.426645 2.27134-27.639967 3.263052-16.891091 1.82347-33.814173 3.614949-50.737254 5.182493-8.733462 0.799768-9.309294 0.319907-10.940821-8.125638-14.843686-76.617733-29.719363-153.171485-44.435086-229.821208-9.789155-50.961189-19.322384-101.95437-28.919595-152.915559a805.525894 805.525894 0 0 1-3.582959-21.081873c-0.639814-4.030829 0.44787-6.622075 5.022541-7.70976 30.48714-7.133927 61.294186-12.636328 89.733921-14.011927z m-1137.077537 0c28.951586 0 28.823623 0.095972 33.302322 26.360339 6.909992 40.660183 11.804569 81.544301 16.187295 122.556382 4.286754 39.796434 8.957397 79.560878 13.148179 119.357311 2.847173 27.224088 5.086522 54.512157 7.74175 81.704255 1.887451 19.354375 4.126801 38.644769 6.174206 57.967153 0.255926 2.367312 0.383888 4.734624 0.543842 7.133927 0.415879 9.469248 0 10.237025-9.117351 11.164755-18.074747 1.887451-36.181485 3.454996-54.256232 5.246476-6.558094 0.639814-13.084197 1.599535-19.57831 2.239349-8.63749 0.799768-8.925406 0.767777-10.620913-7.965685-6.078234-30.679084-11.964523-61.422149-17.914793-92.101233-14.267853-73.898523-28.69566-147.733065-42.867542-221.631589-5.662354-29.559409-10.524941-59.246781-16.091323-88.838181-1.023702-5.406429-0.255926-7.933694 5.342447-9.245313 30.199223-7.037955 60.590391-12.540355 88.006423-13.947946z m382.128944 309.861946v124.027954c0 1.183656-0.127963 2.399303 0.03199 3.582959 0.607823 6.014252-1.599535 8.66948-7.805731 8.413555-8.157629-0.351898-16.251277-0.127963-24.408906 0.063981-17.019054 0.319907-34.070098-0.351898-51.057162 1.599535-9.405267 1.087684-9.213322 0.511851-10.141052-9.405266-2.783191-31.222926-5.822308-62.413861-8.669481-93.636787-2.623238-28.823623-4.99055-57.711228-7.677768-86.534851-2.71921-29.655381-5.758326-59.214791-8.509527-88.838181-1.887451-19.770254-3.550968-39.508518-5.214485-59.278772-2.175368-25.720525-4.190782-51.409059-6.462122-77.129585-0.959721-10.844848-0.159954-12.380402 10.588923-13.500076a531.877423 531.877423 0 0 1 83.527724-2.591247c6.941982 0.383888 13.851974 1.727498 20.570022 3.359024 8.477536 2.015414 9.405267 3.263052 9.853137 12.124476 0.92773 17.850812 1.855461 35.701624 2.335321 53.584427 0.543842 19.866226 0.095972 39.764443 0.831758 59.63067 1.855461 54.800074 1.567544 109.664129 2.207359 164.528184z m1134.806197 5.630364v117.437869c0 1.983424-0.063981 3.966847 0.03199 5.982262 0.415879 5.150503-1.983424 6.973973-6.878001 6.941982-12.028504-0.095972-24.025018 0-36.021531 0.159954-13.564058 0.127963-27.096125 0.063981-40.628192 1.535553-8.925406 1.023702-8.989387 0.351898-9.789155-8.509527-3.678931-40.660183-7.549806-81.320366-11.260728-122.04453-3.391014-37.525094-6.526103-75.082179-9.981099-112.639265-3.550968-38.740741-7.421843-77.38551-10.90883-116.09426-1.727498-19.386366-3.16708-38.772732-4.606661-58.159097-0.575833-8.445546 0.351898-9.949109 9.885127-10.716886 16.571184-1.311619 33.078387-3.550968 49.777534-3.263051 16.635165 0.319907 33.302322-0.607823 49.841515 2.559256 14.011928 2.687219 14.715723 3.486987 15.547481 18.458635 2.399303 44.051198 1.663517 88.230358 3.231061 132.281556 1.599535 46.89837 0.479861 93.79674 1.759489 146.069549zM1831.498213 305.135c9.789155 0.575833 17.498914 0.095972 25.176683 1.791479 4.894578 1.119675 7.357862 3.327033 7.837723 8.573509 2.303331 25.240664 4.798605 50.51332 7.32587 75.785975 2.015414 20.50604 4.158791 41.012081 6.238188 61.518121l0.191944 1.183656c1.663517 12.924244 1.279628 13.276142-11.292718 13.979937-11.196746 0.607823-22.361501 1.599535-33.558247 2.27134-7.357862 0.44787-9.693183 1.695507-10.90883-9.021378-4.190782-37.813011-9.053369-75.530049-13.692021-113.311069a1185.0316 1185.0316 0 0 0-4.286754-31.798759c-0.92773-5.982261 1.407591-9.277304 7.005964-9.757164 7.357862-0.671805 14.715723-0.863749 19.962198-1.215647z m-1133.398606 0.159954c7.549806 0.415879 15.323547-0.159954 22.937334 1.599535 4.350736 0.991712 6.558094 2.815182 6.973973 7.773741 0.92773 11.83656 2.7512 23.641129 3.870875 35.477689 3.550968 36.309448 6.909992 72.650886 10.237025 108.992324 0.703795 7.901704 0.543842 8.061657-6.84601 8.605499-13.116188 0.959721-26.264367 1.919442-39.412546 2.463284-7.645778 0.351898-8.605499-0.575833-9.56522-8.381564-3.327033-26.744227-6.462122-53.520446-9.661192-80.296664-2.591247-22.073585-4.766615-44.14717-7.901704-66.156773-0.863749-6.078234 1.119675-7.74175 5.982262-8.733462 7.709759-1.567544 15.451509-1.055693 23.385203-1.343609z m399.147998 100.002936c0 23.001315 0.063981 45.97064-0.031991 69.003946 0 10.332997-0.127963 10.396978-10.396978 10.269016a324.289753 324.289753 0 0 1-36.981252-1.919443c-7.933694-0.991712-8.093648-0.735786-8.317583-9.149341-0.799768-28.119828-1.631526-56.239655-2.207359-84.359483-0.415879-19.034468-0.639814-38.004955-1.791479-57.039422-0.607823-9.821146-0.063981-9.917118 9.373276-10.045081 13.915956-0.159954 27.799921 0.479861 41.619904 2.591247 8.317583 1.279628 8.701471 1.279628 8.733462 10.49295 0.063981 23.385204 0.063981 46.770407 0.063981 70.187602h-0.063981z m1135.38203 0.607824c0 23.033306 0.063981 46.034621-0.031991 69.035936 0 9.661192-0.159954 9.725174-9.853137 9.661192a505.32514 505.32514 0 0 1-38.132917-1.791479c-6.302168-0.479861-8.157629-3.135089-7.74175-8.861425 0.063981-0.799768 0-1.599535 0-2.399302-0.959721-44.403095-1.919442-88.7742-2.815182-133.177296-0.031991-2.367312-0.159954-4.734624-0.063982-7.133926 0.127963-8.957397 0.159954-9.181332 9.149341-9.117351 12.380402 0.063981 24.664832 0.703795 37.013243 1.919442 15.067621 1.503563 12.412393 3.359024 12.476375 15.259566 0.063981 22.169557 0.031991 44.403095 0 66.604643z m-1565.593 54.000306c0.287916 12.636328 0.287916 12.604337-11.804569 15.547481-8.221611 2.015414-16.443221 4.222773-24.728813 6.046243-7.069945 1.599535-8.317583 0.703795-9.53323-6.238187-8.445546-47.090314-16.8591-94.212619-25.240664-141.334924-1.695507-9.757164-1.247637-10.364988 8.349573-12.060495 11.804569-2.079396 23.577148-4.126801 35.381717-5.950271 7.517815-1.183656 8.477536-0.767777 9.9811 7.517815 2.975135 16.731138 5.790317 33.526256 7.997675 50.385357 3.423005 26.680246 6.238187 53.456464 9.309295 80.168701 0.255926 1.951433 0.191944 3.966847 0.287916 5.91828z m1064.138735-136.696273c15.451509-2.527266 31.030982-5.086522 46.610454-7.549806 5.598373-0.863749 7.29388 2.655228 8.029666 7.645778 2.655228 18.426645 5.982261 36.725327 8.157629 55.183962 3.19907 26.744227 7.581797 53.360492 8.413555 80.328655 0.063981 2.7512 0.031991 5.566382 0.095972 8.317583 0.159954 4.286754-1.983424 6.494113-5.950271 7.421843-10.556932 2.367312-21.113864 4.734624-31.638805 7.261889-5.054531 1.215647-6.750038-0.92773-7.581796-5.854298-3.16708-18.746552-6.81402-37.397131-10.045081-56.079702-5.47041-30.775056-10.780867-61.582103-16.091323-92.38915-0.127963-1.119675 0-2.303331 0-4.286754z m-710.64147 108.032603c-0.44787 16.37924 0.543842 30.647093-1.695507 44.914947-0.671805 4.510689-1.983424 7.421843-6.846011 7.837722-10.428969 0.863749-20.825947 1.695507-31.190935 2.7512-5.02254 0.543842-6.430131-1.631526-7.261889-6.558094-2.335321-14.55577-1.919442-29.303484-3.327033-43.923234-2.655228-27.607976-3.774903-55.407897-5.566383-83.111846-0.44787-6.750038-1.119675-13.436095-1.663516-20.186134-0.287916-3.774903 1.215647-5.886289 5.246475-6.046242 13.500077-0.543842 26.936172-3.007126 40.50023-2.527266 7.933694 0.287916 8.605499 0.799768 9.181331 8.797443 0.351898 5.534392 0.255926 11.132765 0.383889 16.699147l2.239349 81.352357z m1134.902169-15.867388c0 19.066459 0.223935 38.132918-0.031991 57.199376-0.159954 9.917118-1.279628 10.780867-10.652904 11.644616-9.277304 0.863749-18.490626 1.567544-27.735939 2.559256-5.214485 0.543842-7.645778-0.991712-7.965685-6.973973-1.34361-25.336637-3.16708-50.673273-4.926568-75.977919-1.3756-20.985901-2.943145-41.939811-4.414717-62.893722-0.159954-2.399303-0.031991-4.798605-0.191944-7.165917-0.223935-4.190782 1.055693-6.654066 5.758326-6.81402 13.116188-0.44787 26.136404-2.975135 39.348564-2.495274 8.061657 0.287916 8.18962 0.415879 8.797444 8.797443 1.951433 27.32006 2.143377 54.704102 2.015414 82.120134zM628.295894 756.171918c16.571184 18.234701 17.402942 39.828425 11.932532 62.413861-5.502401 22.585436-18.042756 41.204025-33.23834 57.903171-25.49659 27.895893-56.303637 48.497905-89.062116 65.99682-56.399609 30.135242-116.190232 50.161422-178.572103 61.997982-44.882956 8.477536-90.053828 15.00364-135.704561 17.498914-13.915956 0.767777-27.799921 1.407591-41.715876 1.311619-10.077071 0-20.186133 0.287916-30.231214-0.063981-8.541518-0.319907-9.789155-1.791479-10.49295-10.716886-2.591247-32.022693-4.798605-64.077378-7.645778-96.100071-3.327033-37.109215-7.229899-74.18644-10.812858-111.295654-2.623238-26.8402-4.894578-53.744381-7.773741-80.520599-3.327033-31.542833-7.069945-63.021684-10.716885-94.564517-3.327033-29.111539-6.526103-58.28706-10.045081-87.430591-3.934856-32.278619-7.997676-64.493257-12.31642-96.707894a8228.968456 8228.968456 0 0 0-13.212161-92.996973 5984.500754 5984.500754 0 0 0-24.312934-152.627642 3243.825263 3243.825263 0 0 0-23.67312-123.740038c-1.151665-5.502401 0.511851-7.709759 5.342448-9.725174C52.335283 47.609843 98.465876 28.063524 144.724432 8.77313c8.605499-3.582959 17.434933-6.590085 26.584274-8.285592 6.334159-1.183656 7.965685 0.127963 7.773741 6.494113-0.479861 16.283268 0.191944 32.630517-1.407591 48.849803a161.393095 161.393095 0 0 0-0.639814 13.084197c-0.735786 58.383032-1.439582 116.798056 0.095972 175.213079 1.34361 51.185124 4.030829 102.338258 7.005964 153.491392 2.335321 40.372267 5.694345 80.744534 9.149341 121.052819 3.391014 39.508518 7.517815 78.953054 11.38869 118.461572 0.735786 7.517815 1.407591 8.221611 9.949108 7.069945a381.329176 381.329176 0 0 1 50.833227-4.190782c52.880632-0.127963 104.897514 7.133927 156.338564 19.322384 45.010919 10.684895 88.806191 24.920757 130.777993 44.818975 20.793957 9.853136 40.692174 21.241827 58.830902 35.701624 6.174206 4.862587 11.676606 10.46096 16.891091 16.315259z m1126.840512-9.597211c20.47405 17.946784 27.927883 39.924397 22.105576 67.116494-4.830596 22.425483-15.771416 41.268006-30.359177 58.127107-23.417194 27.096125-51.856929 47.698138-82.631985 64.909136-60.334465 33.782182-124.603787 55.727804-192.168151 68.396122a1151.089465 1151.089465 0 0 1-111.455609 15.547481c-21.177845 1.82347-42.451662 4.09481-66.220754 2.623238h-27.76793c-5.406429 0-8.477536-1.695507-8.925406-8.125638-2.047405-28.087837-4.414717-56.143683-6.941983-84.19953-2.687219-29.623391-5.662354-59.246781-8.477536-88.870172-2.559256-27.224088-4.926568-54.512157-7.709759-81.736245-2.559256-25.656544-5.502401-51.249106-8.285592-76.873659-2.591247-24.057008-5.086522-48.114017-7.933695-72.139035-3.423005-29.111539-7.037955-58.223079-10.652904-87.334618-3.391014-27.160107-6.750038-54.288222-10.364987-81.416338a6133.577429 6133.577429 0 0 0-12.156467-87.142675c-5.694345-37.653057-11.804569-75.178151-17.818822-112.767227a3259.14881 3259.14881 0 0 0-29.111539-158.993792c-0.44787-2.335321-0.671805-4.734624-1.3756-7.005964-1.663517-5.118512-0.063981-7.837722 4.958559-9.821146C1191.012355 47.641834 1238.614520 24.448575 1288.2321 6.149893c6.494113-2.431293 13.052207-5.150503 20.058171-5.854299 6.302168-0.639814 7.901704 0.383888 7.29388 7.101936-3.327033 36.43741-1.407591 73.066765-3.135089 109.536166-1.407591 29.751354-1.247637 59.598679 0.255926 89.382023 0.351898 7.549806 0.639814 15.131602 0.575832 22.649418-0.383888 35.765606 1.503563 71.499221 3.327033 107.200845 2.335321 47.186286 5.758326 94.276601 9.245313 141.398906 2.527266 34.006117 5.822308 67.948253 9.021379 101.922379 1.695507 18.586598 3.518977 37.141206 5.822308 55.631832 1.247637 10.205034 1.759489 10.301006 11.772578 8.957396 17.658868-2.399303 35.349726-4.350736 53.200539-4.09481 62.637796 0.799768 124.027954 10.684895 184.266447 27.863902 40.788146 11.580634 80.488608 26.040432 117.981712 46.290547a253.55831 253.55831 0 0 1 47.218277 32.438573zM308.676783 922.811488c23.161269-11.068783 135.608589-98.947243 144.533995-113.279078-54.576139-23.513166-109.344222-45.362816-168.239105-63.24562l23.70511 176.524698z m1277.196815-107.520752c2.879163-3.103098 2.559256-5.502401-1.343609-7.229899-7.773741-3.550968-15.4835-7.325871-23.353213-10.556932-42.003793-17.179007-84.19953-33.814173-127.482951-47.37823-3.774903-1.151665-7.645778-3.774903-12.476374-1.535554l23.321222 173.45359c3.454996 0.767777 4.798605-0.831758 6.33416-1.919442 39.316574-28.855614 78.889073-57.35933 116.638102-88.390312 6.36615-5.182494 12.668318-10.396978 18.362663-16.443221z"></path>
+                            </svg>
+                            <span class="sr-only">Bilibili</span>
+                        </a>
+                        <a href="https://www.xiaohongshu.com/user/profile/63d521280000000026010f28" target="_blank" rel="noopener noreferrer" class="social-icon" title="小红书">
+                            <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                                <path d="M7 7a5 5 0 000 10h10a5 5 0 000-10H7zm11.698 4.96c.072.1.12.215.139.336a1.2 1.2 0 01.015.22v1.139a.778.778 0 01-.558.755 1.179 1.179 0 01-.235.043c-.083.006-.294.006-.38.006h-.292a.025.025 0 01-.023-.015v-.006c-.055-.12-.322-.729-.323-.743 0-.015.003-.019.015-.019h.698c.126 0 .19-.062.19-.21v-.682a.264.264 0 00-.158-.235.367.367 0 00-.16-.034h-1.329c-.015 0-.019.008-.019.02v1.88c0 .025.002.037-.004.042-.005.005-.017.005-.042.005h-.822c-.025 0-.037 0-.042-.005-.006-.005-.005-.017-.005-.042V12.56c0-.025.001-.036-.004-.041-.005-.005-.016-.004-.04-.004h-.833c-.005 0-.01 0-.016-.002a.033.033 0 01-.02-.022.033.033 0 01-.001-.016v-.83s-.004-.048.034-.048h.85c.035 0 .035-.067.035-.067v-.665s.006-.074-.041-.074h-.523c-.023 0-.035.002-.04-.004-.006-.005-.006-.016-.006-.042v-.852c0-.013.003-.017.016-.017h.575a.013.013 0 00.014-.013v-.312a.016.016 0 01.005-.013c.004-.004.013-.004.013-.004h.875s.016 0 .02.004a.026.026 0 01.006.019v.283c0 .019 0 .028.005.033.004.005.014.005.034.005h.413c.2.003.394.054.57.148.17.091.305.235.384.41.045.097.074.2.088.306.01.075.015.15.014.227v.603c0 .023.002.023.024.023h.103c.177.002.35.045.506.127.11.056.204.138.276.238zM14.5 13.55l.001.005v.887c0 .015-.003.019-.02.019h-3.009c-.02 0-.023 0-.026-.005-.004-.006.004-.02.004-.02l.4-.874a.034.034 0 01.033-.017h.748c.026 0 .038.002.044-.004.005-.005.004-.017.004-.044v-2.663c0-.02 0-.03-.004-.035-.005-.005-.015-.005-.036-.005h-.49c-.023 0-.034 0-.04-.005-.005-.005-.005-.016-.005-.039v-.83c0-.043.005-.042.035-.042h2.013c.025 0 .036-.001.041.004.005.005.004.016.004.039v.831c0 .021 0 .032-.004.037-.005.006-.016.006-.039.006h-.494c-.021 0-.031 0-.036.004-.005.005-.004.015-.004.036v2.68c0 .028 0 .028.028.028h.84l.005.001c.002 0 .003.002.004.003a.014.014 0 01.003.004zM6.888 9.59h.866a.018.018 0 01.018.016v.474c.002.464.004 1.151.004 1.57v1.976a1.1 1.1 0 01-.043.307.696.696 0 01-.341.442.743.743 0 01-.253.076 5.705 5.705 0 01-.538.008.033.033 0 01-.03-.02l-.085-.193a9.274 9.274 0 01-.23-.532c-.002-.027 0-.027.023-.027h.424a.14.14 0 00.15-.09.14.14 0 00.01-.062v-.534c0-.733.003-1.96.004-2.726l.002-.668a.019.019 0 01.019-.018zm4.336 2.838h.498a.015.015 0 01.014.005.015.015 0 01.003.007l-.001.008-.334.736a.014.014 0 01-.013.009h-.949a.596.596 0 01-.194-.032.392.392 0 01-.078-.037.27.27 0 01-.131-.228.293.293 0 01.012-.1 2.3 2.3 0 01.08-.22l.134-.303c.121-.27.273-.611.264-.611h-.338a.573.573 0 01-.19-.033.397.397 0 01-.074-.035.266.266 0 01-.131-.217.322.322 0 01.012-.11c.02-.072.046-.142.076-.21a5.48 5.48 0 01.152-.33l.53-1.19.006-.006a.013.013 0 01.008-.002h.892a.015.015 0 01.012.007.015.015 0 010 .013l-.5 1.126a.085.085 0 00.079.12h.754l.007.002a.015.015 0 01.007.012v.007l-.67 1.51a.072.072 0 00.03.092c.01.006.021.01.033.01zm-1.79.176a.834.834 0 00.088.377c0 .007-.004.014-.016.035l-.165.367c-.116.26-.256.573-.287.637l-.003.006c0 .003-.001.004-.005.005-.005.001-.015-.012-.023-.023a3.002 3.002 0 01-.413-.912 3.54 3.54 0 01-.08-.421 140.685 140.685 0 01-.067-.837l-.015-.198a30.938 30.938 0 01-.022-.288 54.046 54.046 0 00-.042-.54c-.001-.016 0-.02.018-.02h.856c.015 0 .036 0 .036.005a22.29 22.29 0 01.014.165l.011.159a107.627 107.627 0 01.062.789l.013.177.007.1.02.252.005.049c.004.038.008.077.008.116zm-4.048-1.812h.85c.015 0 .017.003.016.02a15.7 15.7 0 00-.007.084l-.006.085a205.5 205.5 0 01-.006.07l-.024.301a31.349 31.349 0 00-.021.288l-.016.198-.015.198-.035.45-.003.041a2.746 2.746 0 01-.096.566 2.96 2.96 0 01-.198.56c-.058.123-.13.24-.213.348a.1.1 0 01-.027.025c-.003 0-.005-.002-.01-.012a42.41 42.41 0 01-.274-.608 30.656 30.656 0 00-.176-.392c-.016-.032-.015-.032-.007-.049l.007-.014a.822.822 0 00.078-.349l.009-.132a18.334 18.334 0 00.012-.148l.011-.138.01-.13.01-.146.01-.118.012-.154c0-.016.002-.032.003-.047a22.317 22.317 0 01.02-.269l.017-.201.01-.134.01-.143a.988.988 0 01.005-.046c0-.004.001-.004.006-.004h.038zm5.001 2.748h.965a.015.015 0 01.018.005.015.015 0 01.003.01.015.015 0 01-.004.009l-.408.885a.014.014 0 01-.013.009H9.814a.706.706 0 01-.283-.071.014.014 0 01-.006-.019l.406-.891a.014.014 0 01.007-.008.014.014 0 01.011 0c.142.046.29.07.438.071zm7.567-2.755h-.005a.01.01 0 01-.007-.007v-.452a.457.457 0 11.842.246.458.458 0 01-.386.213h-.444z" clip-rule="evenodd" fill-rule="evenodd"></path>
+                            </svg>
+                            <span class="sr-only">小红书</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center">
+            <p class="font-noto-sans-sc">&copy; <span id="currentYearSimple"></span> 老云宇宙创立于2025年6月1日。由AI全程设计与编码，探索无限可能.</p>
+        </footer>
+    </div>
+
+    <script type="module">
+        // Firebase V9 Modular SDK imports
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, onAuthStateChanged, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, getDoc, setDoc, serverTimestamp, setLogLevel } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js"; 
+
+        // Firebase Config (from __firebase_config global variable)
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : null;
+        let app;
+        let auth;
+        let db;
+        
+        // Global variables for app ID and user ID
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+        let userId; 
+
+        // Visitor Counter and Exit Dialog elements
+        const visitorCountElement = document.getElementById('visitorCount');
+        const exitDialogWrapper = document.getElementById('exitDialogModalWrapper'); // Wrapper for the whole dialog
+        const exitDialogContainer = document.getElementById('exitDialogModalContainer'); // Actual dialog content
+        const timeSpentElement = document.getElementById('timeSpent');
+        const closeExitDialogBtn = document.getElementById('closeExitDialogBtn');
+        
+        let startTime;
+        let timerInterval;
+        let viewingTimeInSeconds = 0;
+        let isExiting = false; // Flag to prevent multiple dialogs
+
+        // Function to initialize Firebase services and listeners
+        async function initFirebase() {
+            if (!firebaseConfig) {
+                console.error("Firebase config (__firebase_config) is not defined or invalid. Visitor counter will show '配置错误'.");
+                if(visitorCountElement) visitorCountElement.textContent = '配置错误';
+                startViewingTimer(); 
+                return;
+            }
+            try {
+                console.log("Attempting to initialize Firebase with config:", firebaseConfig);
+                app = initializeApp(firebaseConfig);
+                auth = getAuth(app);
+                db = getFirestore(app);
+                setLogLevel('debug'); 
+                console.log("Firebase initialized successfully.");
+
+                onAuthStateChanged(auth, async (user) => {
+                    if (user) {
+                        userId = user.uid;
+                        console.log("User is signed in. UID:", userId);
+                    } else {
+                        console.log("No user signed in. Attempting to sign in...");
+                        if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+                            console.log("Attempting sign in with custom token.");
+                            try {
+                                await signInWithCustomToken(auth, __initial_auth_token);
+                                userId = auth.currentUser?.uid;
+                                console.log("Signed in with custom token. UID:", userId);
+                            } catch (error) {
+                                console.warn("Failed to sign in with custom token, trying anonymous. Error:", error.message);
+                                try {
+                                    await signInAnonymously(auth);
+                                    userId = auth.currentUser?.uid;
+                                    console.log("Signed in anonymously after custom token failure. UID:", userId);
+                                } catch (anonError) {
+                                    console.error("Failed to sign in anonymously as fallback:", anonError.message);
+                                    userId = `anonymous-${crypto.randomUUID()}`; 
+                                    console.log("Using temporary anonymous ID:", userId);
+                                }
+                            }
+                        } else {
+                            console.log("No custom token, attempting anonymous sign-in.");
+                            try {
+                                await signInAnonymously(auth);
+                                userId = auth.currentUser?.uid;
+                                console.log("Signed in anonymously. UID:", userId);
+                            } catch (anonError) {
+                                console.error("Failed to sign in anonymously:", anonError.message);
+                                userId = `anonymous-${crypto.randomUUID()}`;
+                                console.log("Using temporary anonymous ID after anonymous sign-in failure:", userId);
+                            }
+                        }
+                    }
+                    
+                    if (db) { 
+                        initVisitorCounter();
+                    } else {
+                        console.error("Firestore (db) is not initialized. Visitor counter cannot be started.");
+                        if(visitorCountElement) visitorCountElement.textContent = '数据库错误';
+                    }
+                    startViewingTimer(); 
+                });
+            } catch (e) {
+                console.error("Error initializing Firebase app:", e.message);
+                 if(visitorCountElement) visitorCountElement.textContent = '初始化失败';
+                 startViewingTimer(); 
+            }
+        }
+
+        // Visitor Counter Logic
+        async function initVisitorCounter() {
+            if (!visitorCountElement || !db) {
+                console.warn("Visitor counter element or DB not ready for initVisitorCounter.");
+                if(visitorCountElement && visitorCountElement.textContent === '加载中...') {
+                     visitorCountElement.textContent = db ? '加载中...' : '数据库错误';
+                }
+                return;
+            }
+            const visitStatsRef = doc(db, `artifacts/${appId}/public/data/site_stats/visits`);
+            console.log(`Accessing visitor stats at: artifacts/${appId}/public/data/site_stats/visits`);
+
+            try {
+                const docSnap = await getDoc(visitStatsRef);
+                let currentCount = 0;
+                if (docSnap.exists() && typeof docSnap.data().count === 'number') {
+                    currentCount = docSnap.data().count;
+                } else {
+                    console.log("Visitor stats document does not exist or count is not a number. Initializing count.");
+                }
+                const newCount = currentCount + 1;
+                await setDoc(visitStatsRef, { count: newCount, lastUpdated: serverTimestamp() }, { merge: true });
+                visitorCountElement.textContent = newCount;
+                console.log("Visitor count updated to:", newCount);
+            } catch (error) {
+                console.error("Error with visitor counter:", error.message, error.stack);
+                visitorCountElement.textContent = '获取失败';
+            }
+        }
+
+        // Exit Dialog Logic
+        function startViewingTimer() {
+            startTime = Date.now(); 
+            viewingTimeInSeconds = 0; 
+            if (timerInterval) clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                viewingTimeInSeconds = Math.floor((Date.now() - startTime) / 1000);
+            }, 1000);
+            console.log("Viewing timer started.");
+        }
+
+        function formatTime(totalSeconds) {
+            const minutes = Math.floor(totalSeconds / 60);
+            const seconds = totalSeconds % 60;
+            return `${minutes}分钟${seconds}秒`;
+        }
+
+        function displayExitDialog() {
+            if (isExiting || !exitDialogWrapper || !timeSpentElement || !exitDialogContainer) return;
+            isExiting = true; // Set flag
+
+            clearInterval(timerInterval); 
+            const formattedTime = formatTime(viewingTimeInSeconds);
+            timeSpentElement.textContent = formattedTime;
+            
+            exitDialogWrapper.classList.remove('hidden');
+            exitDialogWrapper.classList.add('flex');
+            setTimeout(() => { 
+                exitDialogWrapper.classList.remove('opacity-0'); 
+                exitDialogWrapper.classList.add('opacity-100');
+                exitDialogContainer.classList.remove('scale-95', 'opacity-0');
+                exitDialogContainer.classList.add('scale-100', 'opacity-100');
+            }, 10); 
+        }
+        
+        function handleBeforeUnload(event) {
+            if (!isExiting) { // Only display if not already trying to exit (e.g., via button click)
+                displayExitDialog();
+                // For modern browsers, this might not show a custom message,
+                // but it's needed to trigger the "are you sure you want to leave?" dialog.
+                event.preventDefault(); 
+                event.returnValue = '您确定要离开吗？'; // Standard message, may not be displayed by browser
+                return '您确定要离开吗？';
+            }
+        }
+
+        // Function to render rating using bars
+        function renderRatingBars() {
+            const ratingFills = document.querySelectorAll('.rating-bar-fill');
+            ratingFills.forEach(fill => {
+                const ratingValue = parseFloat(fill.dataset.ratingValue);
+                if (!isNaN(ratingValue)) {
+                    const percentage = (ratingValue / 5) * 100;
+                    setTimeout(() => {
+                        fill.style.width = `${percentage}%`;
+                    }, 200 + (parseFloat(fill.closest('[data-aos-delay]')?.dataset.aosDelay) || 0) );
+                }
+            });
+        }
+
+
+        // Attach event listeners after DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({
+                duration: 800, 
+                easing: 'ease-out-cubic', 
+                once: false, 
+                mirror: false, 
+                offset: 100, 
+            });
+            
+            const preloader = document.getElementById('preloader-simple');
+            const mainContent = document.getElementById('main-content-simple');
+
+            if (preloader && mainContent) {
+                setTimeout(() => {
+                    preloader.classList.add('fade-out');
+                    preloader.addEventListener('transitionend', function handler() {
+                        mainContent.classList.add('loaded');
+                        preloader.removeEventListener('transitionend', handler);
+                        AOS.refreshHard(); 
+                        renderRatingBars(); 
+                    });
+                }, 700); 
+            } else {
+                if(mainContent) mainContent.classList.add('loaded');
+                AOS.refreshHard();
+                renderRatingBars();
+            }
+
+            const mobileMenuButtonSimple = document.getElementById('mobile-menu-button-simple');
+            const mobileMenuSimple = document.getElementById('mobile-menu-simple');
+            const menuIconOpen = document.getElementById('menu-icon-open');
+            const menuIconClose = document.getElementById('menu-icon-close');
+
+            if (mobileMenuButtonSimple && mobileMenuSimple && menuIconOpen && menuIconClose) {
+                mobileMenuButtonSimple.addEventListener('click', () => { 
+                    const isOpening = mobileMenuSimple.classList.toggle('hidden'); 
+                    menuIconOpen.classList.toggle('hidden', !isOpening);
+                    menuIconClose.classList.toggle('hidden', isOpening);
+                });
+            }
+            
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId && targetId.length > 1 && targetId.startsWith('#')) {
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) { 
+                            e.preventDefault(); 
+                            const navElement = document.querySelector('nav.navbar-sticky');
+                            const navHeight = navElement ? navElement.offsetHeight : 0;
+                            const elementPosition = targetElement.getBoundingClientRect().top;
+                            const offsetPosition = elementPosition + window.pageYOffset - navHeight - 20; 
+
+                            window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+                        }
+                    } else if (targetId === '#') {
+                         e.preventDefault();
+                         window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                    if (mobileMenuSimple && !mobileMenuSimple.classList.contains('hidden')) { 
+                        mobileMenuSimple.classList.add('hidden'); 
+                        menuIconOpen.classList.remove('hidden');
+                        menuIconClose.classList.add('hidden');
+                    }
+                });
+            });
+            
+            const sectionsSimple = document.querySelectorAll('section[id]');
+            const navLinksSimple = document.querySelectorAll('nav a.nav-link-simple');
+            
+            window.addEventListener('scroll', () => {
+                const navElement = document.querySelector('nav.navbar-sticky');
+                const navHeightSimple = navElement ? navElement.offsetHeight : 80;
+                let currentSimple = '';
+
+                sectionsSimple.forEach(section => { 
+                    const sectionTop = section.offsetTop - navHeightSimple - 100; 
+                    if (pageYOffset >= sectionTop) { 
+                        currentSimple = section.getAttribute('id'); 
+                    } 
+                });
+
+                navLinksSimple.forEach(link => { 
+                    link.classList.remove('active'); 
+                    if (link.getAttribute('href')?.substring(1) === currentSimple) { 
+                        link.classList.add('active'); 
+                    } 
+                });
+                if (window.pageYOffset > 50) {
+                    document.body.classList.add('scrolled');
+                } else {
+                    document.body.classList.remove('scrolled');
+                }
+            });
+
+            const currentYearElementSimple = document.getElementById('currentYearSimple');
+            if (currentYearElementSimple) {
+                currentYearElementSimple.textContent = new Date().getFullYear();
+            }
+            
+            const toggleWechatQrBtnSimple = document.getElementById('toggleWechatQrBtnSimple');
+            const toggleWechatQrBtnTextSimple = document.getElementById('toggleWechatQrBtnTextSimple');
+            const wechatQrImageSimple = document.getElementById('wechatQrImageSimple');
+
+            if (toggleWechatQrBtnSimple && wechatQrImageSimple && toggleWechatQrBtnTextSimple) {
+                toggleWechatQrBtnSimple.addEventListener('click', () => {
+                    const isShown = wechatQrImageSimple.classList.toggle('shown');
+                    toggleWechatQrBtnTextSimple.textContent = isShown ? '隐藏二维码' : '添加微信';
+                });
+            }
+
+            const copyWechatBtnSimple = document.getElementById('copyWechatBtnSimple');
+            const wechatIDElementSimple = document.getElementById('wechatIDSimple');
+            const copyFeedbackElementSimple = document.getElementById('copyFeedbackSimple');
+
+            if (copyWechatBtnSimple && wechatIDElementSimple && copyFeedbackElementSimple) {
+                copyWechatBtnSimple.addEventListener('click', () => {
+                    const wechatID = wechatIDElementSimple.innerText;
+                    try {
+                        const textArea = document.createElement("textarea");
+                        textArea.value = wechatID;
+                        textArea.style.position = "fixed"; 
+                        document.body.appendChild(textArea);
+                        textArea.focus();
+                        textArea.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(textArea);
+
+                        copyFeedbackElementSimple.textContent = '微信号已复制！';
+                        copyFeedbackElementSimple.classList.add('visible');
+                        setTimeout(() => {
+                            copyFeedbackElementSimple.classList.remove('visible');
+                            copyFeedbackElementSimple.textContent = ''; 
+                        }, 2500);
+
+                    } catch (err) {
+                         console.error('无法复制 (execCommand fallback): ', err);
+                        copyFeedbackElementSimple.textContent = '复制失败，请手动操作';
+                        copyFeedbackElementSimple.classList.add('visible');
+                         setTimeout(() => {
+                            copyFeedbackElementSimple.classList.remove('visible');
+                            copyFeedbackElementSimple.textContent = '';
+                        }, 2500); 
+                    }
+                });
+            }
+
+            if (closeExitDialogBtn) {
+                closeExitDialogBtn.addEventListener('click', () => {
+                    isExiting = true; // Set flag to indicate user is intentionally closing
+                    if (exitDialogWrapper && exitDialogContainer) {
+                        exitDialogContainer.classList.remove('scale-100', 'opacity-100');
+                        exitDialogContainer.classList.add('scale-95', 'opacity-0');
+                        exitDialogWrapper.classList.remove('opacity-100'); 
+                        exitDialogWrapper.classList.add('opacity-0');
+                        setTimeout(() => { 
+                            exitDialogWrapper.classList.add('hidden');
+                            exitDialogWrapper.classList.remove('flex');
+                            // Attempt to close the window/tab
+                            window.close(); 
+                            // As a fallback, if window.close() is blocked (common for scripts not opened by script)
+                            // you might redirect to a "safe" blank page or a thank you page.
+                            // For now, we'll just hide the dialog.
+                        }, 300); 
+                    }
+                });
+            }
+            
+            initFirebase();
+            window.addEventListener('beforeunload', handleBeforeUnload);
+
+        });
+    </script>
+</body>
+</html>
